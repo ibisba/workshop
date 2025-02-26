@@ -1,17 +1,15 @@
 #!/bin/bash
 
-# Go to this directory
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-cd $DIR
+# Building the book
+jupyter-book build ibisba_workshops
 
 # Ensure we're in the root directory of the book
-BOOK_DIR=$(pwd)
+BOOK_DIR=$(pwd)/ibisba_workshops/
+
+echo $BOOK_DIR
 
 # Define the output directory (where the compiled book is saved)
-BUILD_DIR="$HOME/ibisba_workshops/_build/html"
-
-# Build the Jupyter Book (uncomment if you want the script to build it automatically)
-jupyter-book build --path-output ~/ibisba_workshops $DIR/ibisba_workshops
+BUILD_DIR=$BOOK_DIR"/_build/html"
 
 # Check if the Jupyter Book build directory exists
 if [ ! -d "$BUILD_DIR" ]; then
@@ -19,9 +17,11 @@ if [ ! -d "$BUILD_DIR" ]; then
     exit 1
 fi
 
+# Build the Jupyter Book (uncomment if you want the script to build it automatically)
+# jupyter-book build $BOOK_DIR
 
 # Create or switch to the gh-pages branch
-git checkout gh-pages
+git checkout --orphan gh-pages
 
 # Remove all files from the current gh-pages branch
 git rm -rf .
@@ -47,3 +47,5 @@ git push origin gh-pages
 
 echo "Deployment complete! Your Jupyter Book is live on GitHub Pages."
 
+# Switch back to the main branch
+git checkout main
