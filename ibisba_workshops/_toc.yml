@@ -3,7 +3,8 @@
 
 format: jb-book
 root: docs/intro
-chapters:
-- file: docs/markdown
-- file: docs/notebooks
-- file: docs/markdown-notebooks
+parts:
+- caption: FAIR Data Management through the IBISBA Knowledge Hub!
+- file: docs/project_creation
+- file: docs/populating-project-guide
+- file: docs/registering-datafiles-guide
