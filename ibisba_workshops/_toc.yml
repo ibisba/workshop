@@ -9,3 +9,6 @@ parts:
     - file: docs/project-creation
     - file: docs/populating-project-guide
     - file: docs/registering-datafiles-guide
+  - caption: FAIR Metada Registration
+    chapters:
+    - file: docs/fairds/recording-metadata-guide
