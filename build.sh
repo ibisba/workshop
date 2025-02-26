@@ -8,10 +8,10 @@ cd $DIR
 BOOK_DIR=$(pwd)
 
 # Define the output directory (where the compiled book is saved)
-BUILD_DIR="ibisba_workshops/_build/html"
+BUILD_DIR="$HOME/ibisba_workshops/_build/html"
 
 # Build the Jupyter Book (uncomment if you want the script to build it automatically)
-jupyter-book build $BOOK_DIR/ibisba_workshops
+jupyter-book build --path-output ~/ibisba_workshops $DIR/ibisba_workshops
 
 # Check if the Jupyter Book build directory exists
 if [ ! -d "$BUILD_DIR" ]; then
