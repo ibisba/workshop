@@ -68,7 +68,7 @@ echo "Deployment complete! Your Jupyter Book is live on GitHub Pages."
 # Switch back to the main branch
 echo "Switching back to main branch..."
 # Save the original branch name to return to it later
-ORIGINAL_BRANCH=$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo "main")
+ORIGINAL_BRANCH=main
 git checkout $ORIGINAL_BRANCH || { echo "Failed to switch back to original branch ($ORIGINAL_BRANCH)"; exit 1; }
 
 echo "Script completed successfully!"
