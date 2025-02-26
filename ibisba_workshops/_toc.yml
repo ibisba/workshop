@@ -4,7 +4,8 @@
 format: jb-book
 root: docs/intro
 parts:
-- caption: FAIR Data Management through the IBISBA Knowledge Hub!
-- file: docs/project_creation
-- file: docs/populating-project-guide
-- file: docs/registering-datafiles-guide
+  - caption: FAIR Data Management through the IBISBA Knowledge Hub!
+    chapters:
+    - file: docs/project-creation
+    - file: docs/populating-project-guide
+    - file: docs/registering-datafiles-guide
