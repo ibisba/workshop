@@ -3,16 +3,20 @@
 set -e
 echo "Starting Jupyter Book deployment process..."
 
-# Building the book
-echo "Building Jupyter Book..."
-jupyter-book build ibisba_workshops || { echo "Jupyter Book build failed"; exit 1; }
-
-# Ensure we're in the root directory of the book
-BOOK_DIR=$(pwd)/ibisba_workshops/
-echo "Book directory: $BOOK_DIR"
+# Go to this directory
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+cd $DIR
 
 # Define the output directory (where the compiled book is saved)
-BUILD_DIR=$BOOK_DIR"/_build/html"
+BUILD_DIR="$HOME/ibisba_workshops/_build/html"
+
+# Building the book
+echo "Building Jupyter Book..."
+jupyter-book build --path-output ~/ibisba_workshops $DIR/ibisba_workshops || { echo "Jupyter Book build failed"; exit 1; }
+
+# Define the output directory (where the compiled book is saved)
+BUILD_DIR=$HOME"/ibisba_workshops/_build/html"
+echo "Build directory: $BUILD_DIR"
 
 # Check if the Jupyter Book build directory exists
 if [ ! -d "$BUILD_DIR" ]; then
