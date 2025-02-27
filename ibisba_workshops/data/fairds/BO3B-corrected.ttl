@@ -1,0 +1,1477 @@
+@prefix base:     <http://fairbydesign.nl/ontology> .
+@prefix bibo:     <http://purl.org/ontology/bibo/> .
+@prefix dc:       <http://purl.org/dc/terms/> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix empusa:   <http://empusa.org/0.1/> .
+@prefix fair:     <http://fairbydesign.nl/ontology/> .
+@prefix foaf:     <http://xmlns.com/foaf/0.1/> .
+@prefix gbol:     <http://gbol.life/0.1/> .
+@prefix jerm:     <http://jermontology.org/ontology/JERMOntology#> .
+@prefix mixs:     <https://w3id.org/mixs/> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix ppeo:     <http://purl.org/ppeo/PPEO.owl#> .
+@prefix prov:     <http://www.w3.org/ns/prov#> .
+@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sample:   <http://fairbydesign.nl/sample/> .
+@prefix schema:   <http://schema.org/> .
+@prefix sschema:  <https://schema.org/> .
+@prefix uniprot:  <http://purl.uniprot.org/core/> .
+@prefix unlock:   <http://m-unlock.nl/ontology/> .
+@prefix void:     <http://m-unlock.nl/ontology/> .
+@prefix wd:       <http://www.wikidata.org/wiki/> .
+@prefix wdt:      <http://www.wikidata.org/wiki/Property:> .
+@prefix wv:       <http://vocab.org/waiver/terms/norms> .
+@prefix xml:      <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+
+fair:inv_BO3B  rdf:type     jerm:Investigation ;
+        jerm:hasPart        <http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1> ;
+        schema:contributor  <http://fairbydesign.nl/ontology/inv_BO3B/person/68012eb371921c705c8994f01ffb8f33> ;
+        schema:description  "Investigation into optimizing micropollutant removal from wastewater treatment plant effluent using biological treatment and ozonation" ;
+        schema:identifier   "BO3B" ;
+        schema:title        "Synergies between biological and ozonisation processes for micropollutant removal" .
+
+<http://fairbydesign.nl/ontology/inv_BO3B/person/68012eb371921c705c8994f01ffb8f33>
+        rdf:type           schema:Person ;
+        base:orcid         <https://orcid.org/1234567890> ;
+        schema:department  "Laboratory of Systems and Synthetic Biology" ;
+        schema:email       <mailto:john.doe@wur.nl> ;
+        schema:familyName  "Doe" ;
+        schema:givenName   "John Doe" ;
+        schema:memberOf    <http://m-unlock.nl/ontology/organization/Wageningen_University> .
+
+<http://m-unlock.nl/ontology/organization/Wageningen_University>
+        rdf:type          schema:Organization ;
+        schema:legalName  "Wageningen University" .
+
+schema:identifier  rdf:type   rdf:Property ;
+        rdfs:label            "investigation identifier" ;
+        schema:description    "Identifier corresponding to the investigation" ;
+        schema:valuePattern   "^[a-zA-Z0-9-_]*${5,25}" ;
+        schema:valueRequired  true .
+
+schema:description  rdf:type  rdf:Property ;
+        rdfs:label            "investigation description" ;
+        schema:description    "Description of the investigation" ;
+        schema:valuePattern   ".*{50,}" ;
+        schema:valueRequired  true .
+
+schema:title  rdf:type        rdf:Property ;
+        rdfs:label            "investigation title" ;
+        schema:description    "Title describing the investigation" ;
+        schema:valuePattern   ".*{10,}" ;
+        schema:valueRequired  true .
+
+<http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1>
+        rdf:type            jerm:Study ;
+        jerm:hasPart        <http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC> , <http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_SF> , <http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_MBBR> , <http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_inf_and_tank> , <http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_MOCK_3> , <http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_MOCK_4> , <http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_XNeg_PCR_QC> ;
+        schema:description  "What type of bioreactors are best at removing organic matter from wastewater treatment plant effluent. And what conditions can optimize these processes" ;
+        schema:identifier   "BO3B-BR1" ;
+        schema:title        "Optimizing condutions using bioreactors" .
+
+<http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC>
+        rdf:type            ppeo:observation_unit ;
+        fair:other          "The reactors were fed with effluent wastewater treatment plant, with a short pre-aeration with pure oxigen to ensure aeraobic conditions. No temperature or pH control" ;
+        jerm:hasPart        <http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_16> , <http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_16_sludge1> , <http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_16_sludge2> , <http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_17> , <http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_18> , <http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_19> , <http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_20> , <http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_23> , <http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_24> , <http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_25> , <http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_26> , <http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_27> , <http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_30> ;
+        schema:description  "We have been running three types of bioreactors  (BAC, SF and MBBR) at different feed flow speeds (0.25 - 4 L / h) for several months, while monitoring several parameters related to the effluent organic matter (TOC, UV254 absorbance and COD), oxygen and nutrient concentrations in the water" ;
+        schema:identifier   "BR1_BAC" ;
+        schema:name         "Biological activated carbon reactor" .
+
+schema:name  rdf:type         rdf:Property ;
+        rdfs:label            "observation unit name" ;
+        schema:description    "Name of the entity being observed" ;
+        schema:valuePattern   ".*{10,}" ;
+        schema:valueRequired  true .
+
+fair:other  rdf:type         rdf:Property ;
+        rdfs:label           "other" ;
+        schema:valuePattern  ".+" .
+
+<http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_SF>
+        rdf:type            ppeo:observation_unit ;
+        fair:other          "The reactors were fed with effluent wastewater treatment plant, with a short pre-aeration with pure oxigen to ensure aeraobic conditions. No temperature or pH control" ;
+        schema:description  "We have been running three types of bioreactors  (BAC, SF and MBBR) at different feed flow speeds (0.25 - 4 L / h) for several months, while monitoring several parameters related to the effluent organic matter (TOC, UV254 absorbance and COD), oxygen and nutrient concentrations in the water" ;
+        schema:identifier   "BR1_SF" ;
+        schema:name         "Sand filter" .
+
+<http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_MBBR>
+        rdf:type            ppeo:observation_unit ;
+        fair:other          "The reactors were fed with effluent wastewater treatment plant, with a short pre-aeration with pure oxigen to ensure aeraobic conditions. No temperature or pH control" ;
+        schema:description  "We have been running three types of bioreactors  (BAC, SF and MBBR) at different feed flow speeds (0.25 - 4 L / h) for several months, while monitoring several parameters related to the effluent organic matter (TOC, UV254 absorbance and COD), oxygen and nutrient concentrations in the water" ;
+        schema:identifier   "BR1_MBBR" ;
+        schema:name         "Moving bed bioreactor" .
+
+<http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_inf_and_tank>
+        rdf:type            ppeo:observation_unit ;
+        fair:other          "The reactors were fed with effluent wastewater treatment plant, with a short pre-aeration with pure oxigen to ensure aeraobic conditions. No temperature or pH control" ;
+        schema:description  "To get an idea of the background of microorganisms that is being fed to the reactors" ;
+        schema:identifier   "BR1_inf_and_tank" ;
+        schema:name         "Influent and storage tank" .
+
+<http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_MOCK_3>
+        rdf:type            ppeo:observation_unit ;
+        schema:description  "MIB Mock 3 community for postive amplicon sequencing control" ;
+        schema:identifier   "MOCK_3" ;
+        schema:name         "Sysnthetic mock community number 3" .
+
+<http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_MOCK_4>
+        rdf:type            ppeo:observation_unit ;
+        schema:description  "MIB Mock 4 community for postive amplicon sequencing control" ;
+        schema:identifier   "MOCK_4" ;
+        schema:name         "Sysnthetic mock community number 4" .
+
+<http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_XNeg_PCR_QC>
+        rdf:type            ppeo:observation_unit ;
+        jerm:hasPart        <http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_XNeg_PCR_QC/sam_Neg_PCR_QC> ;
+        schema:description  "NucleaseFreeWater+PCRComponents (PCR polymerase, buffer) for negative quality control" ;
+        schema:identifier   "XNeg_PCR_QC" ;
+        schema:name         "Neg.PCR.QC" .
+
+<http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_XNeg_PCR_QC/sam_Neg_PCR_QC>
+        rdf:type                   jerm:Sample ;
+        fair:biosafety_level       1 ;
+        fair:broad-scale_environmental_context
+                "water stream" ;
+        fair:environmental_medium  "waste water" ;
+        fair:geographic_location_country_and_or_sea
+                "Netherlands" ;
+        fair:local_environmental_context
+                "bioreactor" ;
+        fair:material              "NucleaseFreeWater+PCRComponents (PCR polymerase, buffer)" ;
+        fair:packageName           "wastewater sludge" ;
+        gbol:scientificName        "blank sample" ;
+        jerm:hasPart               <http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_XNeg_PCR_QC/sam_Neg_PCR_QC/asy_Neg_PCR_QC_lib-2021_0021> , <http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_XNeg_PCR_QC/sam_Neg_PCR_QC/asy_Neg_PCR_QC_lib-2021_0022> , <http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_XNeg_PCR_QC/sam_Neg_PCR_QC/asy_Neg_PCR_QC2_lib-2021_0022> , <http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_XNeg_PCR_QC/sam_Neg_PCR_QC/asy_Neg_PCR_QC_lib-2021_0023> , <http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_XNeg_PCR_QC/sam_Neg_PCR_QC/asy_Neg_PCR_QC_lib-2021_0024> ;
+        uniprot:organism           2582415 ;
+        schema:description         "NucleaseFreeWater+PCRComponents (PCR polymerase, buffer)" ;
+        schema:identifier          "Neg_PCR_QC" ;
+        schema:name                "sample Negative control PCR Quality Control" ;
+        mixs:0000009_lat           "5.19861927949498"^^xsd:double ;
+        mixs:0000009_lon           "56.5968774411778"^^xsd:double ;
+        mixs:0000011               "2019-09-01"^^xsd:date .
+
+uniprot:organism  rdf:type    rdf:Property ;
+        rdfs:label            "ncbi taxonomy id" ;
+        schema:description    "Taxonomic identifier of the sample according to https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi for example use 2582415 for a blank sample or 1510822 for pig metagenome" ;
+        schema:valuePattern   "\\d+" ;
+        schema:valueRequired  true .
+
+gbol:scientificName  rdf:type  rdf:Property ;
+        rdfs:label            "scientific name" ;
+        schema:description    "Name of the organism" ;
+        schema:valuePattern   ".*" ;
+        schema:valueRequired  true .
+
+fair:biosafety_level  rdf:type  rdf:Property ;
+        rdfs:label            "biosafety level" ;
+        schema:description    "Biosafety level of the corresponding sample" ;
+        schema:valuePattern   "(1|2|3|4|unknown)" ;
+        schema:valueRequired  true .
+
+mixs:0000011  rdf:type        rdf:Property ;
+        rdfs:label            "collection date" ;
+        schema:description    "The date of sampling, either as an instance (single point in time) or interval. In case no exact time is available, the date/time can be right truncated i.e. all of these are valid ISO8601 compliant times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23; 2008-01; 2008." ;
+        schema:valuePattern   ".+" ;
+        schema:valueRequired  true .
+
+fair:geographic_location_country_and_or_sea
+        rdf:type              rdf:Property ;
+        rdfs:label            "geographic location (country and/or sea)" ;
+        schema:description    "The geographical origin of the sample as defined by the country or sea. Country or sea names should be chosen from the INSDC country list (http://insdc.org/country.html)." ;
+        schema:valuePattern   "(Afghanistan|Albania|Algeria|American Samoa|Andorra|Angola|Anguilla|Antarctica|Antigua and Barbuda|Arctic Ocean|Argentina|Armenia|Aruba|Ashmore and Cartier Islands|Atlantic Ocean|Australia|Austria|Azerbaijan|Bahamas|Bahrain|Baker Island|Baltic Sea|Bangladesh|Barbados|Bassas da India|Belarus|Belgium|Belize|Benin|Bermuda|Bhutan|Bolivia|Borneo|Bosnia and Herzegovina|Botswana|Bouvet Island|Brazil|British Virgin Islands|Brunei|Bulgaria|Burkina Faso|Burundi|Cambodia|Cameroon|Canada|Cape Verde|Cayman Islands|Central African Republic|Chad|Chile|China|Christmas Island|Clipperton Island|Cocos Islands|Colombia|Comoros|Cook Islands|Coral Sea Islands|Costa Rica|Cote d'Ivoire|Croatia|Cuba|Curacao|Cyprus|Czech Republic|Democratic Republic of the Congo|Denmark|Djibouti|Dominica|Dominican Republic|East Timor|Ecuador|Egypt|El Salvador|Equatorial Guinea|Eritrea|Estonia|Ethiopia|Europa Island|Falkland Islands (Islas Malvinas)|Faroe Islands|Fiji|Finland|France|French Guiana|French Polynesia|French Southern and Antarctic Lands|Gabon|Gambia|Gaza Strip|Georgia|Germany|Ghana|Gibraltar|Glorioso Islands|Greece|Greenland|Grenada|Guadeloupe|Guam|Guatemala|Guernsey|Guinea|Guinea-Bissau|Guyana|Haiti|Heard Island and McDonald Islands|Honduras|Hong Kong|Howland Island|Hungary|Iceland|India|Indian Ocean|Indonesia|Iran|Iraq|Ireland|Isle of Man|Israel|Italy|Jamaica|Jan Mayen|Japan|Jarvis Island|Jersey|Johnston Atoll|Jordan|Juan de Nova Island|Kazakhstan|Kenya|Kerguelen Archipelago|Kingman Reef|Kiribati|Kosovo|Kuwait|Kyrgyzstan|Laos|Latvia|Lebanon|Lesotho|Liberia|Libya|Liechtenstein|Lithuania|Luxembourg|Macau|Macedonia|Madagascar|Malawi|Malaysia|Maldives|Mali|Malta|Marshall Islands|Martinique|Mauritania|Mauritius|Mayotte|Mediterranean Sea|Mexico|Micronesia|Midway Islands|Moldova|Monaco|Mongolia|Montenegro|Montserrat|Morocco|Mozambique|Myanmar|Namibia|Nauru|Navassa Island|Nepal|Netherlands|New Caledonia|New Zealand|Nicaragua|Niger|Nigeria|Niue|Norfolk Island|North Korea|North Sea|Northern Mariana Islands|Norway|Oman|Pacific Ocean|Pakistan|Palau|Palmyra Atoll|Panama|Papua New Guinea|Paracel Islands|Paraguay|Peru|Philippines|Pitcairn Islands|Poland|Portugal|Puerto Rico|Qatar|Republic of the Congo|Reunion|Romania|Ross Sea|Russia|Rwanda|Saint Helena|Saint Kitts and Nevis|Saint Lucia|Saint Pierre and Miquelon|Saint Vincent and the Grenadines|Samoa|San Marino|Sao Tome and Principe|Saudi Arabia|Senegal|Serbia|Seychelles|Sierra Leone|Singapore|Sint Maarten|Slovakia|Slovenia|Solomon Islands|Somalia|South Africa|South Georgia and the South Sandwich Islands|South Korea|Southern Ocean|Spain|Spratly Islands|Sri Lanka|Sudan|Suriname|Svalbard|Swaziland|Sweden|Switzerland|Syria|Taiwan|Tajikistan|Tanzania|Tasman Sea|Thailand|Togo|Tokelau|Tonga|Trinidad and Tobago|Tromelin Island|Tunisia|Turkey|Turkmenistan|Turks and Caicos Islands|Tuvalu|USA|Uganda|Ukraine|United Arab Emirates|United Kingdom|Uruguay|Uzbekistan|Vanuatu|Venezuela|Viet Nam|Virgin Islands|Wake Island|Wallis and Futuna|West Bank|Western Sahara|Yemen|Zambia|Zimbabwe|not applicable|not collected|not provided|restricted access)" ;
+        schema:valueRequired  false .
+
+mixs:0000009_lat  rdf:type    rdf:Property ;
+        rdfs:label            "geographic location (latitude)" ;
+        schema:description    "The geographical origin of the sample as defined by latitude. The values should be reported in decimal degrees and in WGS84 system" ;
+        schema:valuePattern   "(^(\\-|\\+)?(\\d+)(\\.\\d+)?.?[0-9]{0,8}$)|(^not collected$)|(^not provided$)|(^restricted access$)" ;
+        schema:valueRequired  true .
+
+mixs:0000009_lon  rdf:type    rdf:Property ;
+        rdfs:label            "geographic location (longitude)" ;
+        schema:description    "The geographical origin of the sample as defined by longitude. The values should be reported in decimal degrees and in WGS84 system" ;
+        schema:valuePattern   "(^(\\-|\\+)?(\\d+)(\\.\\d+)?.?[0-9]{0,8}$)|(^not collected$)|(^not provided$)|(^restricted access$)" ;
+        schema:valueRequired  true .
+
+fair:broad-scale_environmental_context
+        rdf:type              rdf:Property ;
+        rdfs:label            "broad-scale environmental context" ;
+        schema:description    "In this field, report which major environmental system your sample or specimen came from. The systems identified should have a coarse spatial grain, to provide the general environmental context of where the sampling was done (e.g. were you in the desert or a rainforest?). EnvO terms can be found via the link: https://www.ebi.ac.uk/ols4" ;
+        schema:valuePattern   ".*" ;
+        schema:valueRequired  true .
+
+fair:local_environmental_context
+        rdf:type              rdf:Property ;
+        rdfs:label            "local environmental context" ;
+        schema:description    "In this field, report the entity or entities which are in your sample or specimen‚Äôs local vicinity and which you believe have significant causal influences on your sample or specimen. EnvO terms can be found via the link: https://www.ebi.ac.uk/ols4" ;
+        schema:valuePattern   ".*" ;
+        schema:valueRequired  true .
+
+fair:environmental_medium
+        rdf:type              rdf:Property ;
+        rdfs:label            "environmental medium" ;
+        schema:description    "In this field, report which environmental material or materials (pipe separated) immediately surrounded your sample or specimen prior to sampling. EnvO terms can be found via the link: https://www.ebi.ac.uk/ols4" ;
+        schema:valuePattern   ".*" ;
+        schema:valueRequired  true .
+
+fair:sample_size  rdf:type   rdf:Property ;
+        rdfs:label           "sample size" ;
+        schema:valuePattern  ".+" .
+
+fair:electron_acceptor_condition
+        rdf:type             rdf:Property ;
+        rdfs:label           "electron acceptor condition" ;
+        schema:valuePattern  ".+" .
+
+fair:sample_condition
+        rdf:type             rdf:Property ;
+        rdfs:label           "sample condition" ;
+        schema:valuePattern  ".+" .
+
+fair:material  rdf:type      rdf:Property ;
+        rdfs:label           "material" ;
+        schema:valuePattern  ".+" .
+
+fair:collection_ph  rdf:type  rdf:Property ;
+        rdfs:label           "collection ph" ;
+        schema:valuePattern  ".+" .
+
+fair:local_storage_location
+        rdf:type             rdf:Property ;
+        rdfs:label           "local storage location" ;
+        schema:valuePattern  ".+" .
+
+fair:sample_types  rdf:type  rdf:Property ;
+        rdfs:label           "sample types" ;
+        schema:valuePattern  ".+" .
+
+fair:reactor  rdf:type       rdf:Property ;
+        rdfs:label           "reactor" ;
+        schema:valuePattern  ".+" .
+
+fair:solid_liquid  rdf:type  rdf:Property ;
+        rdfs:label           "solid/liquid" ;
+        schema:valuePattern  ".+" .
+
+fair:flow_rate_l_h  rdf:type  rdf:Property ;
+        rdfs:label           "flow rate (l/h)" ;
+        schema:valuePattern  ".+" .
+
+fair:sample_proces_key
+        rdf:type             rdf:Property ;
+        rdfs:label           "sample proces key" ;
+        schema:valuePattern  ".+" .
+
+<http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_16>
+        rdf:type                     jerm:Sample ;
+        fair:biosafety_level         1 ;
+        fair:broad-scale_environmental_context
+                "water stream" ;
+        fair:collection_ph           7 ;
+        fair:collection_temperature  "20 degrees celcius" ;
+        fair:electron_acceptor_condition
+                "Aerobic" ;
+        fair:environmental_medium    "waste water" ;
+        fair:flow_rate_l_h           1 ;
+        fair:geographic_location_country_and_or_sea
+                "Netherlands" ;
+        fair:local_environmental_context
+                "bioreactor" ;
+        fair:local_storage_location  "-80 freezer at environmental technology. Moved to microbiology freezers in december 2019" ;
+        fair:material                "50 mL water" ;
+        fair:packageName             "wastewater sludge" ;
+        fair:reactor                 "BAC" ;
+        fair:sample_condition        "Stored at -80" ;
+        fair:sample_proces_key       "BAC Liquid 1" ;
+        fair:sample_size             "50 mL" ;
+        fair:sample_treatment        "50 mL sample was filtered with 0.2 a um filter, the filter was stored in an eppendorf." ;
+        fair:sample_types            "Effluent" ;
+        fair:sampling_strategy       "Using sterilised metal rod, sample from middle of the collumn, put in eppendorf and immidiately to -80 freezer" ;
+        fair:solid_liquid            "Liquid" ;
+        gbol:scientificName          "bioreactor metagenome" ;
+        jerm:hasPart                 <http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_16/asy_Bac_9-16> ;
+        uniprot:organism             1076179 ;
+        schema:description           "BAC effluent start (1 Liter per Hour) liquid" ;
+        schema:identifier            "BAC_09_16" ;
+        schema:name                  "sample BAC 09.16" ;
+        mixs:0000009_lat             "5.19861927949498"^^xsd:double ;
+        mixs:0000009_lon             "56.5968774411778"^^xsd:double ;
+        mixs:0000011                 "2019-09-16"^^xsd:date .
+
+fair:collection_temperature
+        rdf:type             rdf:Property ;
+        rdfs:label           "collection temperature" ;
+        schema:valuePattern  ".+" .
+
+fair:sampling_strategy
+        rdf:type              rdf:Property ;
+        rdfs:label            "sampling strategy" ;
+        schema:description    "Strategy used to perform the sampling procedure" ;
+        schema:valuePattern   ".*" ;
+        schema:valueRequired  false .
+
+fair:sample_treatment
+        rdf:type              rdf:Property ;
+        rdfs:label            "sample treatment" ;
+        schema:description    "Treatment applied to the sample" ;
+        schema:valuePattern   ".*" ;
+        schema:valueRequired  false .
+
+<http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_16_sludge1>
+        rdf:type                     jerm:Sample ;
+        fair:biosafety_level         1 ;
+        fair:broad-scale_environmental_context
+                "water stream" ;
+        fair:collection_ph           7 ;
+        fair:collection_temperature  "20 degrees celcius" ;
+        fair:electron_acceptor_condition
+                "Aerobic" ;
+        fair:environmental_medium    "waste water" ;
+        fair:flow_rate_l_h           1 ;
+        fair:geographic_location_country_and_or_sea
+                "Netherlands" ;
+        fair:local_environmental_context
+                "bioreactor" ;
+        fair:local_storage_location  "-80 freezer at environmental technology. Moved to microbiology freezers in december 2019" ;
+        fair:material                "activated carbon, moving bed bioreactor carrier or sand with biofilm" ;
+        fair:packageName             "wastewater sludge" ;
+        fair:reactor                 "BAC" ;
+        fair:sample_condition        "Stored at -80" ;
+        fair:sample_proces_key       "BAC Solid 1" ;
+        fair:sample_size             "10 g" ;
+        fair:sample_treatment        "no pre-treatment" ;
+        fair:sample_types            "Solid" ;
+        fair:sampling_strategy       "Using sterilised metal rod, sample from middle of the collumn, put in eppendorf and immidiately to -80 freezer" ;
+        fair:solid_liquid            "Solid" ;
+        gbol:scientificName          "bioreactor metagenome" ;
+        jerm:hasPart                 <http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_16_sludge1/asy_Bac_9-16_sludge> ;
+        uniprot:organism             1076179 ;
+        schema:description           "BAC effluent start (1 Liter per Hour) solid" ;
+        schema:identifier            "BAC_09_16_sludge1" ;
+        schema:name                  "sample BAC 09.16 sludge1" ;
+        mixs:0000009_lat             "5.19861927949498"^^xsd:double ;
+        mixs:0000009_lon             "56.5968774411778"^^xsd:double ;
+        mixs:0000011                 "2019-09-16"^^xsd:date .
+
+<http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_16_sludge2>
+        rdf:type                     jerm:Sample ;
+        fair:biosafety_level         1 ;
+        fair:broad-scale_environmental_context
+                "water stream" ;
+        fair:collection_ph           7 ;
+        fair:collection_temperature  "20 degrees celcius" ;
+        fair:electron_acceptor_condition
+                "Aerobic" ;
+        fair:environmental_medium    "waste water" ;
+        fair:flow_rate_l_h           1 ;
+        fair:geographic_location_country_and_or_sea
+                "Netherlands" ;
+        fair:local_environmental_context
+                "bioreactor" ;
+        fair:local_storage_location  "-80 freezer at environmental technology. Moved to microbiology freezers in december 2019" ;
+        fair:material                "activated carbon, moving bed bioreactor carrier or sand with biofilm" ;
+        fair:packageName             "wastewater sludge" ;
+        fair:reactor                 "BAC" ;
+        fair:sample_condition        "Stored at -80" ;
+        fair:sample_proces_key       "BAC Solid 1" ;
+        fair:sample_size             "10 g" ;
+        fair:sample_treatment        "no pre-treatment" ;
+        fair:sample_types            "Solid" ;
+        fair:sampling_strategy       "Using sterilised metal rod, sample from middle of the collumn, put in eppendorf and immidiately to -80 freezer" ;
+        fair:solid_liquid            "Solid" ;
+        gbol:scientificName          "bioreactor metagenome" ;
+        jerm:hasPart                 <http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_16_sludge2/asy_Bac_9-16_II_sludge> ;
+        uniprot:organism             1076179 ;
+        schema:description           "BAC effluent start (1 Liter per Hour) solid" ;
+        schema:identifier            "BAC_09_16_sludge2" ;
+        schema:name                  "sample BAC 09.16 sludge2" ;
+        mixs:0000009_lat             "5.19861927949498"^^xsd:double ;
+        mixs:0000009_lon             "56.5968774411778"^^xsd:double ;
+        mixs:0000011                 "2019-09-16"^^xsd:date .
+
+<http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_17>
+        rdf:type                     jerm:Sample ;
+        fair:biosafety_level         1 ;
+        fair:broad-scale_environmental_context
+                "water stream" ;
+        fair:collection_ph           7 ;
+        fair:collection_temperature  "20 degrees celcius" ;
+        fair:electron_acceptor_condition
+                "Aerobic" ;
+        fair:environmental_medium    "waste water" ;
+        fair:flow_rate_l_h           1 ;
+        fair:geographic_location_country_and_or_sea
+                "Netherlands" ;
+        fair:local_environmental_context
+                "bioreactor" ;
+        fair:local_storage_location  "-80 freezer at environmental technology. Moved to microbiology freezers in december 2019" ;
+        fair:material                "50 mL water" ;
+        fair:packageName             "wastewater sludge" ;
+        fair:reactor                 "BAC" ;
+        fair:sample_condition        "Stored at -80" ;
+        fair:sample_proces_key       "BAC Liquid 1" ;
+        fair:sample_size             "50 mL" ;
+        fair:sample_treatment        "50 mL sample was filtered with 0.2 a um filter, the filter was stored in an eppendorf." ;
+        fair:sample_types            "Effluent" ;
+        fair:sampling_strategy       "Using sterilised metal rod, sample from middle of the collumn, put in eppendorf and immidiately to -80 freezer" ;
+        fair:solid_liquid            "Liquid" ;
+        gbol:scientificName          "bioreactor metagenome" ;
+        jerm:hasPart                 <http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_17/asy_Bac_9-17> ;
+        uniprot:organism             1076179 ;
+        schema:description           "BAC effluent 1 Liter per Hour liquid" ;
+        schema:identifier            "BAC_09_17" ;
+        schema:name                  "sample BAC 09.17" ;
+        mixs:0000009_lat             "5.19861927949498"^^xsd:double ;
+        mixs:0000009_lon             "56.5968774411778"^^xsd:double ;
+        mixs:0000011                 "2019-09-17"^^xsd:date .
+
+<http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_18>
+        rdf:type                     jerm:Sample ;
+        fair:biosafety_level         1 ;
+        fair:broad-scale_environmental_context
+                "water stream" ;
+        fair:collection_ph           7 ;
+        fair:collection_temperature  "20 degrees celcius" ;
+        fair:electron_acceptor_condition
+                "Aerobic" ;
+        fair:environmental_medium    "waste water" ;
+        fair:flow_rate_l_h           1 ;
+        fair:geographic_location_country_and_or_sea
+                "Netherlands" ;
+        fair:local_environmental_context
+                "bioreactor" ;
+        fair:local_storage_location  "-80 freezer at environmental technology. Moved to microbiology freezers in december 2019" ;
+        fair:material                "50 mL water" ;
+        fair:packageName             "wastewater sludge" ;
+        fair:reactor                 "BAC" ;
+        fair:sample_condition        "Stored at -80" ;
+        fair:sample_proces_key       "BAC Liquid 1" ;
+        fair:sample_size             "50 mL" ;
+        fair:sample_treatment        "50 mL sample was filtered with 0.2 a um filter, the filter was stored in an eppendorf." ;
+        fair:sample_types            "Effluent" ;
+        fair:sampling_strategy       "Using sterilised metal rod, sample from middle of the collumn, put in eppendorf and immidiately to -80 freezer" ;
+        fair:solid_liquid            "Liquid" ;
+        gbol:scientificName          "bioreactor metagenome" ;
+        jerm:hasPart                 <http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_18/asy_Bac_9-18> ;
+        uniprot:organism             1076179 ;
+        schema:description           "BAC effluent 1 Liter per Hour liquid" ;
+        schema:identifier            "BAC_09_18" ;
+        schema:name                  "sample BAC 09.18" ;
+        mixs:0000009_lat             "5.19861927949498"^^xsd:double ;
+        mixs:0000009_lon             "56.5968774411778"^^xsd:double ;
+        mixs:0000011                 "2019-09-18"^^xsd:date .
+
+<http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_19>
+        rdf:type                     jerm:Sample ;
+        fair:biosafety_level         1 ;
+        fair:broad-scale_environmental_context
+                "water stream" ;
+        fair:collection_ph           7 ;
+        fair:collection_temperature  "20 degrees celcius" ;
+        fair:electron_acceptor_condition
+                "Aerobic" ;
+        fair:environmental_medium    "waste water" ;
+        fair:flow_rate_l_h           1 ;
+        fair:geographic_location_country_and_or_sea
+                "Netherlands" ;
+        fair:local_environmental_context
+                "bioreactor" ;
+        fair:local_storage_location  "-80 freezer at environmental technology. Moved to microbiology freezers in december 2019" ;
+        fair:material                "50 mL water" ;
+        fair:packageName             "wastewater sludge" ;
+        fair:reactor                 "BAC" ;
+        fair:sample_condition        "Stored at -80" ;
+        fair:sample_proces_key       "BAC Liquid 1" ;
+        fair:sample_size             "50 mL" ;
+        fair:sample_treatment        "50 mL sample was filtered with 0.2 a um filter, the filter was stored in an eppendorf." ;
+        fair:sample_types            "Effluent" ;
+        fair:sampling_strategy       "Using sterilised metal rod, sample from middle of the collumn, put in eppendorf and immidiately to -80 freezer" ;
+        fair:solid_liquid            "Liquid" ;
+        gbol:scientificName          "bioreactor metagenome" ;
+        jerm:hasPart                 <http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_19/asy_Bac_9-19> ;
+        uniprot:organism             1076179 ;
+        schema:description           "BAC effluent 1 Liter per Hour liquid" ;
+        schema:identifier            "BAC_09_19" ;
+        schema:name                  "sample BAC 09.19" ;
+        mixs:0000009_lat             "5.19861927949498"^^xsd:double ;
+        mixs:0000009_lon             "56.5968774411778"^^xsd:double ;
+        mixs:0000011                 "2019-09-19"^^xsd:date .
+
+<http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_20>
+        rdf:type                     jerm:Sample ;
+        fair:biosafety_level         1 ;
+        fair:broad-scale_environmental_context
+                "water stream" ;
+        fair:collection_ph           7 ;
+        fair:collection_temperature  "20 degrees celcius" ;
+        fair:electron_acceptor_condition
+                "Aerobic" ;
+        fair:environmental_medium    "waste water" ;
+        fair:flow_rate_l_h           1 ;
+        fair:geographic_location_country_and_or_sea
+                "Netherlands" ;
+        fair:local_environmental_context
+                "bioreactor" ;
+        fair:local_storage_location  "-80 freezer at environmental technology. Moved to microbiology freezers in december 2019" ;
+        fair:material                "50 mL water" ;
+        fair:packageName             "wastewater sludge" ;
+        fair:reactor                 "BAC" ;
+        fair:sample_condition        "Stored at -80" ;
+        fair:sample_proces_key       "BAC Liquid 1" ;
+        fair:sample_size             "50 mL" ;
+        fair:sample_treatment        "50 mL sample was filtered with 0.2 a um filter, the filter was stored in an eppendorf." ;
+        fair:sample_types            "Effluent" ;
+        fair:sampling_strategy       "Using sterilised metal rod, sample from middle of the collumn, put in eppendorf and immidiately to -80 freezer" ;
+        fair:solid_liquid            "Liquid" ;
+        gbol:scientificName          "bioreactor metagenome" ;
+        jerm:hasPart                 <http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_20/asy_Bac_9-20> ;
+        uniprot:organism             1076179 ;
+        schema:description           "BAC effluent 1 Liter per Hour liquid" ;
+        schema:identifier            "BAC_09_20" ;
+        schema:name                  "sample BAC 09.20" ;
+        mixs:0000009_lat             "5.19861927949498"^^xsd:double ;
+        mixs:0000009_lon             "56.5968774411778"^^xsd:double ;
+        mixs:0000011                 "2019-09-20"^^xsd:date .
+
+<http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_23>
+        rdf:type                     jerm:Sample ;
+        fair:biosafety_level         1 ;
+        fair:broad-scale_environmental_context
+                "water stream" ;
+        fair:collection_ph           7 ;
+        fair:collection_temperature  "20 degrees celcius" ;
+        fair:electron_acceptor_condition
+                "Aerobic" ;
+        fair:environmental_medium    "waste water" ;
+        fair:flow_rate_l_h           1 ;
+        fair:geographic_location_country_and_or_sea
+                "Netherlands" ;
+        fair:local_environmental_context
+                "bioreactor" ;
+        fair:local_storage_location  "-80 freezer at environmental technology. Moved to microbiology freezers in december 2019" ;
+        fair:material                "50 mL water" ;
+        fair:packageName             "wastewater sludge" ;
+        fair:reactor                 "BAC" ;
+        fair:sample_condition        "Stored at -80" ;
+        fair:sample_proces_key       "BAC Liquid 1" ;
+        fair:sample_size             "50 mL" ;
+        fair:sample_treatment        "50 mL sample was filtered with 0.2 a um filter, the filter was stored in an eppendorf." ;
+        fair:sample_types            "Effluent" ;
+        fair:sampling_strategy       "Using sterilised metal rod, sample from middle of the collumn, put in eppendorf and immidiately to -80 freezer" ;
+        fair:solid_liquid            "Liquid" ;
+        gbol:scientificName          "bioreactor metagenome" ;
+        jerm:hasPart                 <http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_23/asy_Bac_9-23> ;
+        uniprot:organism             1076179 ;
+        schema:description           "BAC effluent 1 Liter per Hour liquid" ;
+        schema:identifier            "BAC_09_23" ;
+        schema:name                  "sample BAC 09.23" ;
+        mixs:0000009_lat             "5.19861927949498"^^xsd:double ;
+        mixs:0000009_lon             "56.5968774411778"^^xsd:double ;
+        mixs:0000011                 "2019-09-23"^^xsd:date .
+
+<http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_24>
+        rdf:type                     jerm:Sample ;
+        fair:biosafety_level         1 ;
+        fair:broad-scale_environmental_context
+                "water stream" ;
+        fair:collection_ph           7 ;
+        fair:collection_temperature  "20 degrees celcius" ;
+        fair:electron_acceptor_condition
+                "Aerobic" ;
+        fair:environmental_medium    "waste water" ;
+        fair:flow_rate_l_h           1 ;
+        fair:geographic_location_country_and_or_sea
+                "Netherlands" ;
+        fair:local_environmental_context
+                "bioreactor" ;
+        fair:local_storage_location  "-80 freezer at environmental technology. Moved to microbiology freezers in december 2019" ;
+        fair:material                "50 mL water" ;
+        fair:packageName             "wastewater sludge" ;
+        fair:reactor                 "BAC" ;
+        fair:sample_condition        "Stored at -80" ;
+        fair:sample_proces_key       "BAC Liquid 1" ;
+        fair:sample_size             "50 mL" ;
+        fair:sample_treatment        "50 mL sample was filtered with 0.2 a um filter, the filter was stored in an eppendorf." ;
+        fair:sample_types            "Effluent" ;
+        fair:sampling_strategy       "Using sterilised metal rod, sample from middle of the collumn, put in eppendorf and immidiately to -80 freezer" ;
+        fair:solid_liquid            "Liquid" ;
+        gbol:scientificName          "bioreactor metagenome" ;
+        jerm:hasPart                 <http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_24/asy_Bac_9-24> ;
+        uniprot:organism             1076179 ;
+        schema:description           "BAC effluent 1 Liter per Hour liquid" ;
+        schema:identifier            "BAC_09_24" ;
+        schema:name                  "sample BAC 09.24" ;
+        mixs:0000009_lat             "5.19861927949498"^^xsd:double ;
+        mixs:0000009_lon             "56.5968774411778"^^xsd:double ;
+        mixs:0000011                 "2019-09-24"^^xsd:date .
+
+<http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_25>
+        rdf:type                     jerm:Sample ;
+        fair:biosafety_level         1 ;
+        fair:broad-scale_environmental_context
+                "water stream" ;
+        fair:collection_ph           7 ;
+        fair:collection_temperature  "20 degrees celcius" ;
+        fair:electron_acceptor_condition
+                "Aerobic" ;
+        fair:environmental_medium    "waste water" ;
+        fair:flow_rate_l_h           1 ;
+        fair:geographic_location_country_and_or_sea
+                "Netherlands" ;
+        fair:local_environmental_context
+                "bioreactor" ;
+        fair:local_storage_location  "-80 freezer at environmental technology. Moved to microbiology freezers in december 2019" ;
+        fair:material                "50 mL water" ;
+        fair:packageName             "wastewater sludge" ;
+        fair:reactor                 "BAC" ;
+        fair:sample_condition        "Stored at -80" ;
+        fair:sample_proces_key       "BAC Liquid 1" ;
+        fair:sample_size             "50 mL" ;
+        fair:sample_treatment        "50 mL sample was filtered with 0.2 a um filter, the filter was stored in an eppendorf." ;
+        fair:sample_types            "Effluent" ;
+        fair:sampling_strategy       "Using sterilised metal rod, sample from middle of the collumn, put in eppendorf and immidiately to -80 freezer" ;
+        fair:solid_liquid            "Liquid" ;
+        gbol:scientificName          "bioreactor metagenome" ;
+        uniprot:organism             1076179 ;
+        schema:description           "BAC effluent 1 Liter per Hour liquid" ;
+        schema:identifier            "BAC_09_25" ;
+        schema:name                  "sample BAC 09.25" ;
+        mixs:0000009_lat             "5.19861927949498"^^xsd:double ;
+        mixs:0000009_lon             "56.5968774411778"^^xsd:double ;
+        mixs:0000011                 "2019-09-25"^^xsd:date .
+
+<http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_26>
+        rdf:type                     jerm:Sample ;
+        fair:biosafety_level         1 ;
+        fair:broad-scale_environmental_context
+                "water stream" ;
+        fair:collection_ph           7 ;
+        fair:collection_temperature  "20 degrees celcius" ;
+        fair:electron_acceptor_condition
+                "Aerobic" ;
+        fair:environmental_medium    "waste water" ;
+        fair:flow_rate_l_h           1 ;
+        fair:geographic_location_country_and_or_sea
+                "Netherlands" ;
+        fair:local_environmental_context
+                "bioreactor" ;
+        fair:local_storage_location  "-80 freezer at environmental technology. Moved to microbiology freezers in december 2019" ;
+        fair:material                "50 mL water" ;
+        fair:packageName             "wastewater sludge" ;
+        fair:reactor                 "BAC" ;
+        fair:sample_condition        "Stored at -80" ;
+        fair:sample_proces_key       "BAC Liquid 1" ;
+        fair:sample_size             "50 mL" ;
+        fair:sample_treatment        "50 mL sample was filtered with 0.2 a um filter, the filter was stored in an eppendorf." ;
+        fair:sample_types            "Effluent" ;
+        fair:sampling_strategy       "Using sterilised metal rod, sample from middle of the collumn, put in eppendorf and immidiately to -80 freezer" ;
+        fair:solid_liquid            "Liquid" ;
+        gbol:scientificName          "bioreactor metagenome" ;
+        jerm:hasPart                 <http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_26/asy_Bac_9-26> ;
+        uniprot:organism             1076179 ;
+        schema:description           "BAC effluent 1 Liter per Hour liquid" ;
+        schema:identifier            "BAC_09_26" ;
+        schema:name                  "sample BAC 09.26" ;
+        mixs:0000009_lat             "5.19861927949498"^^xsd:double ;
+        mixs:0000009_lon             "56.5968774411778"^^xsd:double ;
+        mixs:0000011                 "2019-09-26"^^xsd:date .
+
+<http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_27>
+        rdf:type                     jerm:Sample ;
+        fair:biosafety_level         1 ;
+        fair:broad-scale_environmental_context
+                "water stream" ;
+        fair:collection_ph           7 ;
+        fair:collection_temperature  "20 degrees celcius" ;
+        fair:electron_acceptor_condition
+                "Aerobic" ;
+        fair:environmental_medium    "waste water" ;
+        fair:flow_rate_l_h           1 ;
+        fair:geographic_location_country_and_or_sea
+                "Netherlands" ;
+        fair:local_environmental_context
+                "bioreactor" ;
+        fair:local_storage_location  "-80 freezer at environmental technology. Moved to microbiology freezers in december 2019" ;
+        fair:material                "50 mL water" ;
+        fair:packageName             "wastewater sludge" ;
+        fair:reactor                 "BAC" ;
+        fair:sample_condition        "Stored at -80" ;
+        fair:sample_proces_key       "BAC Liquid 1" ;
+        fair:sample_size             "50 mL" ;
+        fair:sample_treatment        "50 mL sample was filtered with 0.2 a um filter, the filter was stored in an eppendorf." ;
+        fair:sample_types            "Effluent" ;
+        fair:sampling_strategy       "Using sterilised metal rod, sample from middle of the collumn, put in eppendorf and immidiately to -80 freezer" ;
+        fair:solid_liquid            "Liquid" ;
+        gbol:scientificName          "bioreactor metagenome" ;
+        jerm:hasPart                 <http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_27/asy_Bac_9-27> ;
+        uniprot:organism             1076179 ;
+        schema:description           "BAC effluent 1 Liter per Hour liquid" ;
+        schema:identifier            "BAC_09_27" ;
+        schema:name                  "sample BAC 09.27" ;
+        mixs:0000009_lat             "5.19861927949498"^^xsd:double ;
+        mixs:0000009_lon             "56.5968774411778"^^xsd:double ;
+        mixs:0000011                 "2019-09-27"^^xsd:date .
+
+<http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_30>
+        rdf:type                     jerm:Sample ;
+        fair:biosafety_level         1 ;
+        fair:broad-scale_environmental_context
+                "water stream" ;
+        fair:collection_ph           7 ;
+        fair:collection_temperature  "20 degrees celcius" ;
+        fair:electron_acceptor_condition
+                "Aerobic" ;
+        fair:environmental_medium    "waste water" ;
+        fair:flow_rate_l_h           1 ;
+        fair:geographic_location_country_and_or_sea
+                "Netherlands" ;
+        fair:local_environmental_context
+                "bioreactor" ;
+        fair:local_storage_location  "-80 freezer at environmental technology. Moved to microbiology freezers in december 2019" ;
+        fair:material                "50 mL water" ;
+        fair:packageName             "wastewater sludge" ;
+        fair:reactor                 "BAC" ;
+        fair:sample_condition        "Stored at -80" ;
+        fair:sample_proces_key       "BAC Liquid 1" ;
+        fair:sample_size             "50 mL" ;
+        fair:sample_treatment        "50 mL sample was filtered with 0.2 a um filter, the filter was stored in an eppendorf." ;
+        fair:sample_types            "Effluent" ;
+        fair:sampling_strategy       "Using sterilised metal rod, sample from middle of the collumn, put in eppendorf and immidiately to -80 freezer" ;
+        fair:solid_liquid            "Liquid" ;
+        gbol:scientificName          "bioreactor metagenome" ;
+        jerm:hasPart                 <http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_30/asy_Bac_9-30> ;
+        uniprot:organism             1076179 ;
+        schema:description           "BAC effluent 1 Liter per Hour liquid" ;
+        schema:identifier            "BAC_09_30" ;
+        schema:name                  "sample BAC 09.30" ;
+        mixs:0000009_lat             "5.19861927949498"^^xsd:double ;
+        mixs:0000009_lon             "56.5968774411778"^^xsd:double ;
+        mixs:0000011                 "2019-09-30"^^xsd:date .
+
+<http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_XNeg_PCR_QC/sam_Neg_PCR_QC/asy_Neg_PCR_QC_lib-2021_0021>
+        rdf:type                 jerm:Assay ;
+        fair:barcode_name        "Hiseq-70" ;
+        fair:facility            "NovoGene" ;
+        fair:forwardBarcode      "TTGCATAT" ;
+        fair:forwardPrimer       "GTGYCAGCMGCCGCGGTAA" ;
+        fair:instrument_model    "Illumina NovaSeq 6000" ;
+        fair:internal_sample_id  "2021_01404" ;
+        fair:libraryName         "2021_0021" ;
+        fair:library_selection   "PCR" ;
+        fair:library_source      "GENOMIC" ;
+        fair:library_strategy    "AMPLICON" ;
+        fair:packageName         "Amplicon demultiplexed" ;
+        fair:platform            "ILLUMINA" ;
+        fair:primerNames         "515F – 806R new EMP" ;
+        fair:protocol            "Qiagen DNeasy Powersoil Pro kit" ;
+        fair:reverseBarcode      "TTGCATAT" ;
+        fair:reversePrimer       "GGACTACNVGGGTWTCTAAT" ;
+        fair:target_subfragment  "V4" ;
+        schema:dataset           <http://fairbydesign.nl/data_sample/Neg_PCR_QC_lib-2021_0021_f.fastq.gz> , <http://fairbydesign.nl/data_sample/Neg_PCR_QC_lib-2021_0021_r.fastq.gz> , <http://fairbydesign.nl/data_sample/D20210021_FDDP210180293-1a_H73WNDSX2_L3_1.fq.gz> , <http://fairbydesign.nl/data_sample/D20210021_FDDP210180293-1a_H73WNDSX2_L3_2.fq.gz> ;
+        schema:dateCreated       "2021-06-17"^^xsd:date ;
+        schema:description       "Negative PCR Quality Control of library 2021_0021" ;
+        schema:identifier        "Neg_PCR_QC_lib-2021_0021" .
+
+fair:protocol  rdf:type       rdf:Property ;
+        rdfs:label            "protocol" ;
+        schema:description    "The protocol used for preparation or isolation (name or url) used to create the assay" ;
+        schema:valuePattern   ".*" ;
+        schema:valueRequired  true .
+
+fair:facility  rdf:type       rdf:Property ;
+        rdfs:label            "facility" ;
+        schema:description    "The facility that was used for generating the data" ;
+        schema:valuePattern   ".*" ;
+        schema:valueRequired  true .
+
+schema:dateCreated  rdf:type  rdf:Property ;
+        rdfs:label            "assay date" ;
+        schema:description    "The date when the data generation took place" ;
+        schema:valuePattern   ".+" ;
+        schema:valueRequired  true .
+
+<http://fairbydesign.nl/data_sample/Neg_PCR_QC_lib-2021_0021_f.fastq.gz>
+        rdf:type            jerm:Data_sample ;
+        schema:description  "demultiplexed forward file" ;
+        schema:identifier   "Neg_PCR_QC_lib-2021_0021_f.fastq.gz" .
+
+fair:file  rdf:type           rdf:Property ;
+        rdfs:label            "demultiplexed forward file" ;
+        schema:description    "File path or name of the forward reads when working with demultiplexed reads" ;
+        schema:unitCode       ".fq.gz|.fastq.gz|fastq.bz2|fq.bz2" ;
+        schema:valuePattern   ".* ?(.fq.gz|.fastq.gz|fastq.bz2|fq.bz2)" ;
+        schema:valueRequired  true .
+
+<http://fairbydesign.nl/data_sample/Neg_PCR_QC_lib-2021_0021_r.fastq.gz>
+        rdf:type            jerm:Data_sample ;
+        schema:description  "demultiplexed reverse file" ;
+        schema:identifier   "Neg_PCR_QC_lib-2021_0021_r.fastq.gz" .
+
+fair:forwardPrimer  rdf:type  rdf:Property ;
+        rdfs:label            "forward primer" ;
+        schema:description    "The forward primer" ;
+        schema:valuePattern   "[ACGTUWSMKRYBDHVN]+" ;
+        schema:valueRequired  true .
+
+fair:reversePrimer  rdf:type  rdf:Property ;
+        rdfs:label            "reverse primer" ;
+        schema:description    "The reverse primer used" ;
+        schema:valuePattern   "[ACGTUWSMKRYBDHVN]+" ;
+        schema:valueRequired  false .
+
+fair:primerNames  rdf:type    rdf:Property ;
+        rdfs:label            "primer names" ;
+        schema:description    "The primer names corresponding to the primers used" ;
+        schema:valuePattern   ".*" ;
+        schema:valueRequired  true .
+
+fair:target_subfragment
+        rdf:type              rdf:Property ;
+        rdfs:label            "target subfragment" ;
+        schema:description    "Name of subfragment of a gene or locus (e.g. V3-4, V4, V6, V9, ITS). Important to e.g. identify special regions on marker genes like V6 on 16S rRNA" ;
+        schema:valuePattern   ".*" ;
+        schema:valueRequired  true .
+
+<http://fairbydesign.nl/data_sample/D20210021_FDDP210180293-1a_H73WNDSX2_L3_1.fq.gz>
+        rdf:type            jerm:Data_sample ;
+        schema:description  "library forward file" ;
+        schema:identifier   "D20210021_FDDP210180293-1a_H73WNDSX2_L3_1.fq.gz" .
+
+<http://fairbydesign.nl/data_sample/D20210021_FDDP210180293-1a_H73WNDSX2_L3_2.fq.gz>
+        rdf:type            jerm:Data_sample ;
+        schema:description  "library reverse file" ;
+        schema:identifier   "D20210021_FDDP210180293-1a_H73WNDSX2_L3_2.fq.gz" .
+
+fair:platform  rdf:type       rdf:Property ;
+        rdfs:label            "platform" ;
+        schema:description    "The platform that was used for generating the data (Source: https://ena-docs.readthedocs.io/en/latest/submit/reads/webin-cli.html#permitted-values-for-platform)" ;
+        schema:valuePattern   "(LS454|ILLUMINA|PACBIO_SMRT|ION_TORRENT|CAPILLARY|OXFORD_NANOPORE|BGISEQ|DNBSEQ)" ;
+        schema:valueRequired  true .
+
+fair:instrument_model
+        rdf:type              rdf:Property ;
+        rdfs:label            "instrument model" ;
+        schema:description    "The instrument model that was used for generating the data (Source: https://ena-docs.readthedocs.io/en/latest/submit/reads/webin-cli.html#permitted-values-for-instrument)" ;
+        schema:valuePattern   "(454 GS|454 GS 20|454 GS FLX|454 GS FLX+|454 GS FLX Titanium|454 GS Junior|HiSeq X Five|HiSeq X Ten|Illumina Genome Analyzer|Illumina Genome Analyzer II|Illumina Genome Analyzer IIx|Illumina HiScanSQ|Illumina HiSeq 1000|Illumina HiSeq 1500|Illumina HiSeq 2000|Illumina HiSeq 2500|Illumina HiSeq 3000|Illumina HiSeq 4000|Illumina iSeq 100|Illumina MiSeq|Illumina MiniSeq|Illumina NovaSeq 6000|NextSeq 500|NextSeq 550|PacBio RS|PacBio RS II|Sequel|Ion Torrent PGM|Ion Torrent Proton|Ion Torrent S5|Ion Torrent S5 XL|AB 3730xL Genetic Analyzer|AB 3730 Genetic Analyzer|AB 3500xL Genetic Analyzer|AB 3500 Genetic Analyzer|AB 3130xL Genetic Analyzer|AB 3130 Genetic Analyzer|AB 310 Genetic Analyzer|MinION|GridION|PromethION|BGISEQ-500|DNBSEQ-T7|DNBSEQ-G400|DNBSEQ-G50|DNBSEQ-G400 FAST|unspecified)" ;
+        schema:valueRequired  true .
+
+fair:library_source  rdf:type  rdf:Property ;
+        rdfs:label            "library source" ;
+        schema:description    "Source ENA" ;
+        schema:valuePattern   "(GENOMIC|GENOMIC_SINGLE_CELL|TRANSCRIPTOMIC|TRANSCRIPTOMIC_SINGLE_CELL|METAGENOMIC|METATRANSCRIPTOMIC|SYNTHETIC|VIRAL_RNA|OTHER)" ;
+        schema:valueRequired  true .
+
+fair:library_selection
+        rdf:type              rdf:Property ;
+        rdfs:label            "library selection" ;
+        schema:description    "Source ENA" ;
+        schema:valuePattern   "(RANDOM|PCR|RANDOM_PCR|RT-PCR|HMPR|MF|repeat_fractionation|size_fractionation|MSLL|cDNA|cDNA_randomPriming|cDNA_oligo_dT|PolyA|Oligo-dT|Inverse_rRNA|Inverse_rRNA_selection|ChIP|ChIP-Seq|MNase|DNase|Hybrid_Selection|Reduced_Representation|Restriction_Digest|5-methylcytidine_antibody|MBD2_protein_methyl-CpG_binding_domain|CAGE|RACE|MDA|padlock_probes_capture_method|other|unspecified)" ;
+        schema:valueRequired  true .
+
+fair:library_strategy
+        rdf:type              rdf:Property ;
+        rdfs:label            "library strategy" ;
+        schema:description    "Source ENA" ;
+        schema:valuePattern   "(WGS|WGA|WXS|RNA-Seq|ssRNA-seq|miRNA-Seq|ncRNA-Seq|FL-cDNA|EST|Hi-C|ATAC-seq|WCS|RAD-Seq|CLONE|POOLCLONE|AMPLICON|CLONEEND|FINISHING|ChIP-Seq|MNase-Seq|DNase-Hypersensitivity|Bisulfite-Seq|CTS|MRE-Seq|MeDIP-Seq|MBD-Seq|Tn-Seq|VALIDATION|FAIRE-seq|SELEX|RIP-Seq|ChIA-PET|Synthetic-Long-Read|Targeted-Capture|Tethered_Chromatin_Conformation_Capture|OTHER)" ;
+        schema:valueRequired  true .
+
+fair:forwardBarcode  rdf:type  rdf:Property ;
+        rdfs:label            "forward barcode sequence" ;
+        schema:description    "The forward barcode used for this assay" ;
+        schema:valuePattern   "[ACGTUWSMKRYBDHVN]+" ;
+        schema:valueRequired  false .
+
+fair:reverseBarcode  rdf:type  rdf:Property ;
+        rdfs:label            "reverse barcode sequence" ;
+        schema:description    "The reverse barcode used for this assay" ;
+        schema:valuePattern   "[ACGTUWSMKRYBDHVN]+" ;
+        schema:valueRequired  false .
+
+fair:internal_sample_id
+        rdf:type             rdf:Property ;
+        rdfs:label           "internal_sample_id" ;
+        schema:valuePattern  ".+" .
+
+fair:libraryName  rdf:type    rdf:Property ;
+        rdfs:label            "library name" ;
+        schema:description    "A given name for a library used in amplicon sequencing" ;
+        schema:valuePattern   ".*" ;
+        schema:valueRequired  false .
+
+fair:barcode_name  rdf:type  rdf:Property ;
+        rdfs:label           "barcode name" ;
+        schema:valuePattern  ".+" .
+
+<http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_16/asy_Bac_9-16>
+        rdf:type                 jerm:Assay ;
+        fair:barcode_name        "Hiseq-68" ;
+        fair:facility            "NovoGene" ;
+        fair:forwardBarcode      "TTGACTAG" ;
+        fair:forwardPrimer       "GTGYCAGCMGCCGCGGTAA" ;
+        fair:instrument_model    "Illumina NovaSeq 6000" ;
+        fair:internal_sample_id  "2021_01470" ;
+        fair:libraryName         "2021_0022" ;
+        fair:library_selection   "PCR" ;
+        fair:library_source      "GENOMIC" ;
+        fair:library_strategy    "AMPLICON" ;
+        fair:packageName         "Amplicon demultiplexed" ;
+        fair:platform            "ILLUMINA" ;
+        fair:primerNames         "515F – 806R new EMP" ;
+        fair:protocol            "Qiagen DNeasy Powersoil Pro kit" ;
+        fair:reverseBarcode      "TTGACTAG" ;
+        fair:reversePrimer       "GGACTACNVGGGTWTCTAAT" ;
+        fair:target_subfragment  "V4" ;
+        schema:dataset           <http://fairbydesign.nl/data_sample/Bac_9-16_f.fastq.gz> , <http://fairbydesign.nl/data_sample/Bac_9-16_r.fastq.gz> , <http://fairbydesign.nl/data_sample/D20210022_FDDP210180294-1a_H73WNDSX2_L3_1.fq.gz> , <http://fairbydesign.nl/data_sample/D20210022_FDDP210180294-1a_H73WNDSX2_L3_2.fq.gz> ;
+        schema:dateCreated       "2021-06-17"^^xsd:date ;
+        schema:description       "16s Amplicon assay of sample BAC 09.16" ;
+        schema:identifier        "Bac_9-16" .
+
+<http://fairbydesign.nl/data_sample/Bac_9-16_f.fastq.gz>
+        rdf:type            jerm:Data_sample ;
+        schema:description  "demultiplexed forward file" ;
+        schema:identifier   "Bac_9-16_f.fastq.gz" .
+
+<http://fairbydesign.nl/data_sample/Bac_9-16_r.fastq.gz>
+        rdf:type            jerm:Data_sample ;
+        schema:description  "demultiplexed reverse file" ;
+        schema:identifier   "Bac_9-16_r.fastq.gz" .
+
+<http://fairbydesign.nl/data_sample/D20210022_FDDP210180294-1a_H73WNDSX2_L3_1.fq.gz>
+        rdf:type            jerm:Data_sample ;
+        schema:description  "library forward file" ;
+        schema:identifier   "D20210022_FDDP210180294-1a_H73WNDSX2_L3_1.fq.gz" .
+
+<http://fairbydesign.nl/data_sample/D20210022_FDDP210180294-1a_H73WNDSX2_L3_2.fq.gz>
+        rdf:type            jerm:Data_sample ;
+        schema:description  "library reverse file" ;
+        schema:identifier   "D20210022_FDDP210180294-1a_H73WNDSX2_L3_2.fq.gz" .
+
+<http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_17/asy_Bac_9-17>
+        rdf:type                 jerm:Assay ;
+        fair:barcode_name        "Hiseq-29" ;
+        fair:facility            "NovoGene" ;
+        fair:forwardBarcode      "CTAGGAGA" ;
+        fair:forwardPrimer       "GTGYCAGCMGCCGCGGTAA" ;
+        fair:instrument_model    "Illumina NovaSeq 6000" ;
+        fair:internal_sample_id  "2021_01433" ;
+        fair:libraryName         "2021_0022" ;
+        fair:library_selection   "PCR" ;
+        fair:library_source      "GENOMIC" ;
+        fair:library_strategy    "AMPLICON" ;
+        fair:packageName         "Amplicon demultiplexed" ;
+        fair:platform            "ILLUMINA" ;
+        fair:primerNames         "515F – 806R new EMP" ;
+        fair:protocol            "Qiagen DNeasy Powersoil Pro kit" ;
+        fair:reverseBarcode      "CTAGGAGA" ;
+        fair:reversePrimer       "GGACTACNVGGGTWTCTAAT" ;
+        fair:target_subfragment  "V4" ;
+        schema:dataset           <http://fairbydesign.nl/data_sample/D20210022_FDDP210180294-1a_H73WNDSX2_L3_1.fq.gz> , <http://fairbydesign.nl/data_sample/D20210022_FDDP210180294-1a_H73WNDSX2_L3_2.fq.gz> , <http://fairbydesign.nl/data_sample/Bac_9-17_f.fastq.gz> , <http://fairbydesign.nl/data_sample/Bac_9-17_r.fastq.gz> ;
+        schema:dateCreated       "2021-06-17"^^xsd:date ;
+        schema:description       "16s Amplicon assay of sample BAC 09.17" ;
+        schema:identifier        "Bac_9-17" .
+
+<http://fairbydesign.nl/data_sample/Bac_9-17_f.fastq.gz>
+        rdf:type            jerm:Data_sample ;
+        schema:description  "demultiplexed forward file" ;
+        schema:identifier   "Bac_9-17_f.fastq.gz" .
+
+<http://fairbydesign.nl/data_sample/Bac_9-17_r.fastq.gz>
+        rdf:type            jerm:Data_sample ;
+        schema:description  "demultiplexed reverse file" ;
+        schema:identifier   "Bac_9-17_r.fastq.gz" .
+
+<http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_18/asy_Bac_9-18>
+        rdf:type                 jerm:Assay ;
+        fair:barcode_name        "Hiseq-44" ;
+        fair:facility            "NovoGene" ;
+        fair:forwardBarcode      "GCCAGGTT" ;
+        fair:forwardPrimer       "GTGYCAGCMGCCGCGGTAA" ;
+        fair:instrument_model    "Illumina NovaSeq 6000" ;
+        fair:internal_sample_id  "2021_01446" ;
+        fair:libraryName         "2021_0022" ;
+        fair:library_selection   "PCR" ;
+        fair:library_source      "GENOMIC" ;
+        fair:library_strategy    "AMPLICON" ;
+        fair:packageName         "Amplicon demultiplexed" ;
+        fair:platform            "ILLUMINA" ;
+        fair:primerNames         "515F – 806R new EMP" ;
+        fair:protocol            "Qiagen DNeasy Powersoil Pro kit" ;
+        fair:reverseBarcode      "GCCAGGTT" ;
+        fair:reversePrimer       "GGACTACNVGGGTWTCTAAT" ;
+        fair:target_subfragment  "V4" ;
+        schema:dataset           <http://fairbydesign.nl/data_sample/D20210022_FDDP210180294-1a_H73WNDSX2_L3_1.fq.gz> , <http://fairbydesign.nl/data_sample/D20210022_FDDP210180294-1a_H73WNDSX2_L3_2.fq.gz> , <http://fairbydesign.nl/data_sample/Bac_9-18_f.fastq.gz> , <http://fairbydesign.nl/data_sample/Bac_9-18_r.fastq.gz> ;
+        schema:dateCreated       "2021-06-17"^^xsd:date ;
+        schema:description       "16s Amplicon assay of sample BAC 09.18" ;
+        schema:identifier        "Bac_9-18" .
+
+<http://fairbydesign.nl/data_sample/Bac_9-18_f.fastq.gz>
+        rdf:type            jerm:Data_sample ;
+        schema:description  "demultiplexed forward file" ;
+        schema:identifier   "Bac_9-18_f.fastq.gz" .
+
+<http://fairbydesign.nl/data_sample/Bac_9-18_r.fastq.gz>
+        rdf:type            jerm:Data_sample ;
+        schema:description  "demultiplexed reverse file" ;
+        schema:identifier   "Bac_9-18_r.fastq.gz" .
+
+<http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_19/asy_Bac_9-19>
+        rdf:type                 jerm:Assay ;
+        fair:barcode_name        "Hiseq-45" ;
+        fair:facility            "NovoGene" ;
+        fair:forwardBarcode      "GCCTTAAG" ;
+        fair:forwardPrimer       "GTGYCAGCMGCCGCGGTAA" ;
+        fair:instrument_model    "Illumina NovaSeq 6000" ;
+        fair:internal_sample_id  "2021_01447" ;
+        fair:libraryName         "2021_0022" ;
+        fair:library_selection   "PCR" ;
+        fair:library_source      "GENOMIC" ;
+        fair:library_strategy    "AMPLICON" ;
+        fair:packageName         "Amplicon demultiplexed" ;
+        fair:platform            "ILLUMINA" ;
+        fair:primerNames         "515F – 806R new EMP" ;
+        fair:protocol            "Qiagen DNeasy Powersoil Pro kit" ;
+        fair:reverseBarcode      "GCCTTAAG" ;
+        fair:reversePrimer       "GGACTACNVGGGTWTCTAAT" ;
+        fair:target_subfragment  "V4" ;
+        schema:dataset           <http://fairbydesign.nl/data_sample/D20210022_FDDP210180294-1a_H73WNDSX2_L3_1.fq.gz> , <http://fairbydesign.nl/data_sample/D20210022_FDDP210180294-1a_H73WNDSX2_L3_2.fq.gz> , <http://fairbydesign.nl/data_sample/Bac_9-19_f.fastq.gz> , <http://fairbydesign.nl/data_sample/Bac_9-19_r.fastq.gz> ;
+        schema:dateCreated       "2021-06-17"^^xsd:date ;
+        schema:description       "16s Amplicon assay of sample BAC 09.19" ;
+        schema:identifier        "Bac_9-19" .
+
+<http://fairbydesign.nl/data_sample/Bac_9-19_f.fastq.gz>
+        rdf:type            jerm:Data_sample ;
+        schema:description  "demultiplexed forward file" ;
+        schema:identifier   "Bac_9-19_f.fastq.gz" .
+
+<http://fairbydesign.nl/data_sample/Bac_9-19_r.fastq.gz>
+        rdf:type            jerm:Data_sample ;
+        schema:description  "demultiplexed reverse file" ;
+        schema:identifier   "Bac_9-19_r.fastq.gz" .
+
+<http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_20/asy_Bac_9-20>
+        rdf:type                 jerm:Assay ;
+        fair:barcode_name        "Hiseq-49" ;
+        fair:facility            "NovoGene" ;
+        fair:forwardBarcode      "GGTACCAA" ;
+        fair:forwardPrimer       "GTGYCAGCMGCCGCGGTAA" ;
+        fair:instrument_model    "Illumina NovaSeq 6000" ;
+        fair:internal_sample_id  "2021_01451" ;
+        fair:libraryName         "2021_0022" ;
+        fair:library_selection   "PCR" ;
+        fair:library_source      "GENOMIC" ;
+        fair:library_strategy    "AMPLICON" ;
+        fair:packageName         "Amplicon demultiplexed" ;
+        fair:platform            "ILLUMINA" ;
+        fair:primerNames         "515F – 806R new EMP" ;
+        fair:protocol            "Qiagen DNeasy Powersoil Pro kit" ;
+        fair:reverseBarcode      "GGTACCAA" ;
+        fair:reversePrimer       "GGACTACNVGGGTWTCTAAT" ;
+        fair:target_subfragment  "V4" ;
+        schema:dataset           <http://fairbydesign.nl/data_sample/D20210022_FDDP210180294-1a_H73WNDSX2_L3_1.fq.gz> , <http://fairbydesign.nl/data_sample/D20210022_FDDP210180294-1a_H73WNDSX2_L3_2.fq.gz> , <http://fairbydesign.nl/data_sample/Bac_9-20_f.fastq.gz> , <http://fairbydesign.nl/data_sample/Bac_9-20_r.fastq.gz> ;
+        schema:dateCreated       "2021-06-17"^^xsd:date ;
+        schema:description       "16s Amplicon assay of sample BAC 09.20" ;
+        schema:identifier        "Bac_9-20" .
+
+<http://fairbydesign.nl/data_sample/Bac_9-20_f.fastq.gz>
+        rdf:type            jerm:Data_sample ;
+        schema:description  "demultiplexed forward file" ;
+        schema:identifier   "Bac_9-20_f.fastq.gz" .
+
+<http://fairbydesign.nl/data_sample/Bac_9-20_r.fastq.gz>
+        rdf:type            jerm:Data_sample ;
+        schema:description  "demultiplexed reverse file" ;
+        schema:identifier   "Bac_9-20_r.fastq.gz" .
+
+<http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_24/asy_Bac_9-24>
+        rdf:type                 jerm:Assay ;
+        fair:barcode_name        "Hiseq-66" ;
+        fair:facility            "NovoGene" ;
+        fair:forwardBarcode      "TGGTATGA" ;
+        fair:forwardPrimer       "GTGYCAGCMGCCGCGGTAA" ;
+        fair:instrument_model    "Illumina NovaSeq 6000" ;
+        fair:internal_sample_id  "2021_01468" ;
+        fair:libraryName         "2021_0022" ;
+        fair:library_selection   "PCR" ;
+        fair:library_source      "GENOMIC" ;
+        fair:library_strategy    "AMPLICON" ;
+        fair:packageName         "Amplicon demultiplexed" ;
+        fair:platform            "ILLUMINA" ;
+        fair:primerNames         "515F – 806R new EMP" ;
+        fair:protocol            "Qiagen DNeasy Powersoil Pro kit" ;
+        fair:reverseBarcode      "TGGTATGA" ;
+        fair:reversePrimer       "GGACTACNVGGGTWTCTAAT" ;
+        fair:target_subfragment  "V4" ;
+        schema:dataset           <http://fairbydesign.nl/data_sample/D20210022_FDDP210180294-1a_H73WNDSX2_L3_1.fq.gz> , <http://fairbydesign.nl/data_sample/D20210022_FDDP210180294-1a_H73WNDSX2_L3_2.fq.gz> , <http://fairbydesign.nl/data_sample/Bac_9-24_f.fastq.gz> , <http://fairbydesign.nl/data_sample/Bac_9-24_r.fastq.gz> ;
+        schema:dateCreated       "2021-06-17"^^xsd:date ;
+        schema:description       "16s Amplicon assay of sample BAC 09.24" ;
+        schema:identifier        "Bac_9-24" .
+
+<http://fairbydesign.nl/data_sample/Bac_9-24_f.fastq.gz>
+        rdf:type            jerm:Data_sample ;
+        schema:description  "demultiplexed forward file" ;
+        schema:identifier   "Bac_9-24_f.fastq.gz" .
+
+<http://fairbydesign.nl/data_sample/Bac_9-24_r.fastq.gz>
+        rdf:type            jerm:Data_sample ;
+        schema:description  "demultiplexed reverse file" ;
+        schema:identifier   "Bac_9-24_r.fastq.gz" .
+
+<http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_26/asy_Bac_9-26>
+        rdf:type                 jerm:Assay ;
+        fair:barcode_name        "Hiseq-64" ;
+        fair:facility            "NovoGene" ;
+        fair:forwardBarcode      "TGCCTGCG" ;
+        fair:forwardPrimer       "GTGYCAGCMGCCGCGGTAA" ;
+        fair:instrument_model    "Illumina NovaSeq 6000" ;
+        fair:internal_sample_id  "2021_01466" ;
+        fair:libraryName         "2021_0022" ;
+        fair:library_selection   "PCR" ;
+        fair:library_source      "GENOMIC" ;
+        fair:library_strategy    "AMPLICON" ;
+        fair:packageName         "Amplicon demultiplexed" ;
+        fair:platform            "ILLUMINA" ;
+        fair:primerNames         "515F – 806R new EMP" ;
+        fair:protocol            "Qiagen DNeasy Powersoil Pro kit" ;
+        fair:reverseBarcode      "TGCCTGCG" ;
+        fair:reversePrimer       "GGACTACNVGGGTWTCTAAT" ;
+        fair:target_subfragment  "V4" ;
+        schema:dataset           <http://fairbydesign.nl/data_sample/D20210022_FDDP210180294-1a_H73WNDSX2_L3_1.fq.gz> , <http://fairbydesign.nl/data_sample/D20210022_FDDP210180294-1a_H73WNDSX2_L3_2.fq.gz> , <http://fairbydesign.nl/data_sample/Bac_9-26_f.fastq.gz> , <http://fairbydesign.nl/data_sample/Bac_9-26_r.fastq.gz> ;
+        schema:dateCreated       "2021-06-17"^^xsd:date ;
+        schema:description       "16s Amplicon assay of sample BAC 09.26" ;
+        schema:identifier        "Bac_9-26" .
+
+<http://fairbydesign.nl/data_sample/Bac_9-26_f.fastq.gz>
+        rdf:type            jerm:Data_sample ;
+        schema:description  "demultiplexed forward file" ;
+        schema:identifier   "Bac_9-26_f.fastq.gz" .
+
+<http://fairbydesign.nl/data_sample/Bac_9-26_r.fastq.gz>
+        rdf:type            jerm:Data_sample ;
+        schema:description  "demultiplexed reverse file" ;
+        schema:identifier   "Bac_9-26_r.fastq.gz" .
+
+<http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_27/asy_Bac_9-27>
+        rdf:type                 jerm:Assay ;
+        fair:barcode_name        "Hiseq-50" ;
+        fair:facility            "NovoGene" ;
+        fair:forwardBarcode      "GGTAGAAT" ;
+        fair:forwardPrimer       "GTGYCAGCMGCCGCGGTAA" ;
+        fair:instrument_model    "Illumina NovaSeq 6000" ;
+        fair:internal_sample_id  "2021_01452" ;
+        fair:libraryName         "2021_0022" ;
+        fair:library_selection   "PCR" ;
+        fair:library_source      "GENOMIC" ;
+        fair:library_strategy    "AMPLICON" ;
+        fair:packageName         "Amplicon demultiplexed" ;
+        fair:platform            "ILLUMINA" ;
+        fair:primerNames         "515F – 806R new EMP" ;
+        fair:protocol            "Qiagen DNeasy Powersoil Pro kit" ;
+        fair:reverseBarcode      "GGTAGAAT" ;
+        fair:reversePrimer       "GGACTACNVGGGTWTCTAAT" ;
+        fair:target_subfragment  "V4" ;
+        schema:dataset           <http://fairbydesign.nl/data_sample/D20210022_FDDP210180294-1a_H73WNDSX2_L3_1.fq.gz> , <http://fairbydesign.nl/data_sample/D20210022_FDDP210180294-1a_H73WNDSX2_L3_2.fq.gz> , <http://fairbydesign.nl/data_sample/Bac_9-27_f.fastq.gz> , <http://fairbydesign.nl/data_sample/Bac_9-27_r.fastq.gz> ;
+        schema:dateCreated       "2021-06-17"^^xsd:date ;
+        schema:description       "16s Amplicon assay of sample BAC 09.27" ;
+        schema:identifier        "Bac_9-27" .
+
+<http://fairbydesign.nl/data_sample/Bac_9-27_f.fastq.gz>
+        rdf:type            jerm:Data_sample ;
+        schema:description  "demultiplexed forward file" ;
+        schema:identifier   "Bac_9-27_f.fastq.gz" .
+
+<http://fairbydesign.nl/data_sample/Bac_9-27_r.fastq.gz>
+        rdf:type            jerm:Data_sample ;
+        schema:description  "demultiplexed reverse file" ;
+        schema:identifier   "Bac_9-27_r.fastq.gz" .
+
+<http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_30/asy_Bac_9-30>
+        rdf:type                 jerm:Assay ;
+        fair:barcode_name        "Hiseq-30" ;
+        fair:facility            "NovoGene" ;
+        fair:forwardBarcode      "CTCAGCGC" ;
+        fair:forwardPrimer       "GTGYCAGCMGCCGCGGTAA" ;
+        fair:instrument_model    "Illumina NovaSeq 6000" ;
+        fair:internal_sample_id  "2021_01434" ;
+        fair:libraryName         "2021_0022" ;
+        fair:library_selection   "PCR" ;
+        fair:library_source      "GENOMIC" ;
+        fair:library_strategy    "AMPLICON" ;
+        fair:packageName         "Amplicon demultiplexed" ;
+        fair:platform            "ILLUMINA" ;
+        fair:primerNames         "515F – 806R new EMP" ;
+        fair:protocol            "Qiagen DNeasy Powersoil Pro kit" ;
+        fair:reverseBarcode      "CTCAGCGC" ;
+        fair:reversePrimer       "GGACTACNVGGGTWTCTAAT" ;
+        fair:target_subfragment  "V4" ;
+        schema:dataset           <http://fairbydesign.nl/data_sample/D20210022_FDDP210180294-1a_H73WNDSX2_L3_1.fq.gz> , <http://fairbydesign.nl/data_sample/D20210022_FDDP210180294-1a_H73WNDSX2_L3_2.fq.gz> , <http://fairbydesign.nl/data_sample/Bac_9-30_f.fastq.gz> , <http://fairbydesign.nl/data_sample/Bac_9-30_r.fastq.gz> ;
+        schema:dateCreated       "2021-06-17"^^xsd:date ;
+        schema:description       "16s Amplicon assay of sample BAC 09.30" ;
+        schema:identifier        "Bac_9-30" .
+
+<http://fairbydesign.nl/data_sample/Bac_9-30_f.fastq.gz>
+        rdf:type            jerm:Data_sample ;
+        schema:description  "demultiplexed forward file" ;
+        schema:identifier   "Bac_9-30_f.fastq.gz" .
+
+<http://fairbydesign.nl/data_sample/Bac_9-30_r.fastq.gz>
+        rdf:type            jerm:Data_sample ;
+        schema:description  "demultiplexed reverse file" ;
+        schema:identifier   "Bac_9-30_r.fastq.gz" .
+
+<http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_XNeg_PCR_QC/sam_Neg_PCR_QC/asy_Neg_PCR_QC_lib-2021_0022>
+        rdf:type                 jerm:Assay ;
+        fair:barcode_name        "Hiseq-48" ;
+        fair:facility            "NovoGene" ;
+        fair:forwardBarcode      "GGAGTATG" ;
+        fair:forwardPrimer       "GTGYCAGCMGCCGCGGTAA" ;
+        fair:instrument_model    "Illumina NovaSeq 6000" ;
+        fair:internal_sample_id  "2021_01450" ;
+        fair:libraryName         "2021_0022" ;
+        fair:library_selection   "PCR" ;
+        fair:library_source      "GENOMIC" ;
+        fair:library_strategy    "AMPLICON" ;
+        fair:packageName         "Amplicon demultiplexed" ;
+        fair:platform            "ILLUMINA" ;
+        fair:primerNames         "515F – 806R new EMP" ;
+        fair:protocol            "Qiagen DNeasy Powersoil Pro kit" ;
+        fair:reverseBarcode      "GGAGTATG" ;
+        fair:reversePrimer       "GGACTACNVGGGTWTCTAAT" ;
+        fair:target_subfragment  "V4" ;
+        schema:dataset           <http://fairbydesign.nl/data_sample/D20210022_FDDP210180294-1a_H73WNDSX2_L3_1.fq.gz> , <http://fairbydesign.nl/data_sample/D20210022_FDDP210180294-1a_H73WNDSX2_L3_2.fq.gz> , <http://fairbydesign.nl/data_sample/Neg_PCR_QC_lib-2021_0022_f.fastq.gz> , <http://fairbydesign.nl/data_sample/Neg_PCR_QC_lib-2021_0022_r.fastq.gz> ;
+        schema:dateCreated       "2021-06-17"^^xsd:date ;
+        schema:description       "Negative PCR Quality Control of library 2021_0022" ;
+        schema:identifier        "Neg_PCR_QC_lib-2021_0022" .
+
+<http://fairbydesign.nl/data_sample/Neg_PCR_QC_lib-2021_0022_f.fastq.gz>
+        rdf:type            jerm:Data_sample ;
+        schema:description  "demultiplexed forward file" ;
+        schema:identifier   "Neg_PCR_QC_lib-2021_0022_f.fastq.gz" .
+
+<http://fairbydesign.nl/data_sample/Neg_PCR_QC_lib-2021_0022_r.fastq.gz>
+        rdf:type            jerm:Data_sample ;
+        schema:description  "demultiplexed reverse file" ;
+        schema:identifier   "Neg_PCR_QC_lib-2021_0022_r.fastq.gz" .
+
+<http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_XNeg_PCR_QC/sam_Neg_PCR_QC/asy_Neg_PCR_QC2_lib-2021_0022>
+        rdf:type                 jerm:Assay ;
+        fair:barcode_name        "Hiseq-70" ;
+        fair:facility            "NovoGene" ;
+        fair:forwardBarcode      "TTGCATAT" ;
+        fair:forwardPrimer       "GTGYCAGCMGCCGCGGTAA" ;
+        fair:instrument_model    "Illumina NovaSeq 6000" ;
+        fair:internal_sample_id  "2021_01472" ;
+        fair:libraryName         "2021_0022" ;
+        fair:library_selection   "PCR" ;
+        fair:library_source      "GENOMIC" ;
+        fair:library_strategy    "AMPLICON" ;
+        fair:packageName         "Amplicon demultiplexed" ;
+        fair:platform            "ILLUMINA" ;
+        fair:primerNames         "515F – 806R new EMP" ;
+        fair:protocol            "Qiagen DNeasy Powersoil Pro kit" ;
+        fair:reverseBarcode      "TTGCATAT" ;
+        fair:reversePrimer       "GGACTACNVGGGTWTCTAAT" ;
+        fair:target_subfragment  "V4" ;
+        schema:dataset           <http://fairbydesign.nl/data_sample/D20210022_FDDP210180294-1a_H73WNDSX2_L3_1.fq.gz> , <http://fairbydesign.nl/data_sample/D20210022_FDDP210180294-1a_H73WNDSX2_L3_2.fq.gz> , <http://fairbydesign.nl/data_sample/Neg_PCR_QC2_lib-2021_0022_f.fastq.gz> , <http://fairbydesign.nl/data_sample/Neg_PCR_QC2_lib-2021_0022_r.fastq.gz> ;
+        schema:dateCreated       "2021-06-17"^^xsd:date ;
+        schema:description       "Negative PCR Quality Control 2 of library 2021_0022" ;
+        schema:identifier        "Neg_PCR_QC2_lib-2021_0022" .
+
+<http://fairbydesign.nl/data_sample/Neg_PCR_QC2_lib-2021_0022_f.fastq.gz>
+        rdf:type            jerm:Data_sample ;
+        schema:description  "demultiplexed forward file" ;
+        schema:identifier   "Neg_PCR_QC2_lib-2021_0022_f.fastq.gz" .
+
+<http://fairbydesign.nl/data_sample/Neg_PCR_QC2_lib-2021_0022_r.fastq.gz>
+        rdf:type            jerm:Data_sample ;
+        schema:description  "demultiplexed reverse file" ;
+        schema:identifier   "Neg_PCR_QC2_lib-2021_0022_r.fastq.gz" .
+
+<http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_23/asy_Bac_9-23>
+        rdf:type                 jerm:Assay ;
+        fair:barcode_name        "Hiseq-19" ;
+        fair:facility            "NovoGene" ;
+        fair:forwardBarcode      "CAACGAGG" ;
+        fair:forwardPrimer       "GTGYCAGCMGCCGCGGTAA" ;
+        fair:instrument_model    "Illumina NovaSeq 6000" ;
+        fair:internal_sample_id  "2021_01491" ;
+        fair:libraryName         "2021_0023" ;
+        fair:library_selection   "PCR" ;
+        fair:library_source      "GENOMIC" ;
+        fair:library_strategy    "AMPLICON" ;
+        fair:packageName         "Amplicon demultiplexed" ;
+        fair:platform            "ILLUMINA" ;
+        fair:primerNames         "515F – 806R new EMP" ;
+        fair:protocol            "Qiagen DNeasy Powersoil Pro kit" ;
+        fair:reverseBarcode      "CAACGAGG" ;
+        fair:reversePrimer       "GGACTACNVGGGTWTCTAAT" ;
+        fair:target_subfragment  "V4" ;
+        schema:dataset           <http://fairbydesign.nl/data_sample/Bac_9-23_f.fastq.gz> , <http://fairbydesign.nl/data_sample/Bac_9-23_r.fastq.gz> , <http://fairbydesign.nl/data_sample/D20210023_FDDP210180295-1a_H73WNDSX2_L3_1.fq.gz> , <http://fairbydesign.nl/data_sample/D20210023_FDDP210180295-1a_H73WNDSX2_L3_2.fq.gz> ;
+        schema:dateCreated       "2021-06-17"^^xsd:date ;
+        schema:description       "16s Amplicon assay of sample BAC 09.23" ;
+        schema:identifier        "Bac_9-23" .
+
+<http://fairbydesign.nl/data_sample/Bac_9-23_f.fastq.gz>
+        rdf:type            jerm:Data_sample ;
+        schema:description  "demultiplexed forward file" ;
+        schema:identifier   "Bac_9-23_f.fastq.gz" .
+
+<http://fairbydesign.nl/data_sample/Bac_9-23_r.fastq.gz>
+        rdf:type            jerm:Data_sample ;
+        schema:description  "demultiplexed reverse file" ;
+        schema:identifier   "Bac_9-23_r.fastq.gz" .
+
+<http://fairbydesign.nl/data_sample/D20210023_FDDP210180295-1a_H73WNDSX2_L3_1.fq.gz>
+        rdf:type            jerm:Data_sample ;
+        schema:description  "library forward file" ;
+        schema:identifier   "D20210023_FDDP210180295-1a_H73WNDSX2_L3_1.fq.gz" .
+
+<http://fairbydesign.nl/data_sample/D20210023_FDDP210180295-1a_H73WNDSX2_L3_2.fq.gz>
+        rdf:type            jerm:Data_sample ;
+        schema:description  "library reverse file" ;
+        schema:identifier   "D20210023_FDDP210180295-1a_H73WNDSX2_L3_2.fq.gz" .
+
+<http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_XNeg_PCR_QC/sam_Neg_PCR_QC/asy_Neg_PCR_QC_lib-2021_0023>
+        rdf:type                 jerm:Assay ;
+        fair:barcode_name        "Hiseq-70" ;
+        fair:facility            "NovoGene" ;
+        fair:forwardBarcode      "TTGCATAT" ;
+        fair:forwardPrimer       "GTGYCAGCMGCCGCGGTAA" ;
+        fair:instrument_model    "Illumina NovaSeq 6000" ;
+        fair:internal_sample_id  "2021_01540" ;
+        fair:libraryName         "2021_0023" ;
+        fair:library_selection   "PCR" ;
+        fair:library_source      "GENOMIC" ;
+        fair:library_strategy    "AMPLICON" ;
+        fair:packageName         "Amplicon demultiplexed" ;
+        fair:platform            "ILLUMINA" ;
+        fair:primerNames         "515F – 806R new EMP" ;
+        fair:protocol            "Qiagen DNeasy Powersoil Pro kit" ;
+        fair:reverseBarcode      "TTGCATAT" ;
+        fair:reversePrimer       "GGACTACNVGGGTWTCTAAT" ;
+        fair:target_subfragment  "V4" ;
+        schema:dataset           <http://fairbydesign.nl/data_sample/D20210023_FDDP210180295-1a_H73WNDSX2_L3_1.fq.gz> , <http://fairbydesign.nl/data_sample/D20210023_FDDP210180295-1a_H73WNDSX2_L3_2.fq.gz> , <http://fairbydesign.nl/data_sample/Neg_PCR_QC_lib-2021_0023_f.fastq.gz> , <http://fairbydesign.nl/data_sample/Neg_PCR_QC_lib-2021_0023_r.fastq.gz> ;
+        schema:dateCreated       "2021-06-17"^^xsd:date ;
+        schema:description       "Negative PCR Quality Control of library 2021_0023" ;
+        schema:identifier        "Neg_PCR_QC_lib-2021_0023" .
+
+<http://fairbydesign.nl/data_sample/Neg_PCR_QC_lib-2021_0023_f.fastq.gz>
+        rdf:type            jerm:Data_sample ;
+        schema:description  "demultiplexed forward file" ;
+        schema:identifier   "Neg_PCR_QC_lib-2021_0023_f.fastq.gz" .
+
+<http://fairbydesign.nl/data_sample/Neg_PCR_QC_lib-2021_0023_r.fastq.gz>
+        rdf:type            jerm:Data_sample ;
+        schema:description  "demultiplexed reverse file" ;
+        schema:identifier   "Neg_PCR_QC_lib-2021_0023_r.fastq.gz" .
+
+<http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_16_sludge2/asy_Bac_9-16_II_sludge>
+        rdf:type                 jerm:Assay ;
+        fair:barcode_name        "Hiseq-8" ;
+        fair:facility            "NovoGene" ;
+        fair:forwardBarcode      "AGACCTGC" ;
+        fair:forwardPrimer       "GTGYCAGCMGCCGCGGTAA" ;
+        fair:instrument_model    "Illumina NovaSeq 6000" ;
+        fair:internal_sample_id  "2021_01548" ;
+        fair:libraryName         "2021_0024" ;
+        fair:library_selection   "PCR" ;
+        fair:library_source      "GENOMIC" ;
+        fair:library_strategy    "AMPLICON" ;
+        fair:packageName         "Amplicon demultiplexed" ;
+        fair:platform            "ILLUMINA" ;
+        fair:primerNames         "515F – 806R new EMP" ;
+        fair:protocol            "Qiagen DNeasy Powersoil Pro kit" ;
+        fair:reverseBarcode      "AGACCTGC" ;
+        fair:reversePrimer       "GGACTACNVGGGTWTCTAAT" ;
+        fair:target_subfragment  "V4" ;
+        schema:dataset           <http://fairbydesign.nl/data_sample/Bac_9-16_II_sludge_f.fastq.gz> , <http://fairbydesign.nl/data_sample/Bac_9-16_II_sludge_r.fastq.gz> , <http://fairbydesign.nl/data_sample/D2021_0024_MERGED_1.fq.gz> , <http://fairbydesign.nl/data_sample/D2021_0024_MERGED_2.fq.gz> ;
+        schema:dateCreated       "2021-06-17"^^xsd:date ;
+        schema:description       "16s Amplicon assay of sample BAC 09.16 sludge2" ;
+        schema:identifier        "Bac_9-16_II_sludge" .
+
+<http://fairbydesign.nl/data_sample/Bac_9-16_II_sludge_f.fastq.gz>
+        rdf:type            jerm:Data_sample ;
+        schema:description  "demultiplexed forward file" ;
+        schema:identifier   "Bac_9-16_II_sludge_f.fastq.gz" .
+
+<http://fairbydesign.nl/data_sample/Bac_9-16_II_sludge_r.fastq.gz>
+        rdf:type            jerm:Data_sample ;
+        schema:description  "demultiplexed reverse file" ;
+        schema:identifier   "Bac_9-16_II_sludge_r.fastq.gz" .
+
+<http://fairbydesign.nl/data_sample/D2021_0024_MERGED_1.fq.gz>
+        rdf:type            jerm:Data_sample ;
+        schema:description  "library forward file" ;
+        schema:identifier   "D2021_0024_MERGED_1.fq.gz" .
+
+<http://fairbydesign.nl/data_sample/D2021_0024_MERGED_2.fq.gz>
+        rdf:type            jerm:Data_sample ;
+        schema:description  "library reverse file" ;
+        schema:identifier   "D2021_0024_MERGED_2.fq.gz" .
+
+<http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_16_sludge1/asy_Bac_9-16_sludge>
+        rdf:type                 jerm:Assay ;
+        fair:barcode_name        "Hiseq-34" ;
+        fair:facility            "NovoGene" ;
+        fair:forwardBarcode      "CTTGCGAG" ;
+        fair:forwardPrimer       "GTGYCAGCMGCCGCGGTAA" ;
+        fair:instrument_model    "Illumina NovaSeq 6000" ;
+        fair:internal_sample_id  "2021_01572" ;
+        fair:libraryName         "2021_0024" ;
+        fair:library_selection   "PCR" ;
+        fair:library_source      "GENOMIC" ;
+        fair:library_strategy    "AMPLICON" ;
+        fair:packageName         "Amplicon demultiplexed" ;
+        fair:platform            "ILLUMINA" ;
+        fair:primerNames         "515F – 806R new EMP" ;
+        fair:protocol            "Qiagen DNeasy Powersoil Pro kit" ;
+        fair:reverseBarcode      "CTTGCGAG" ;
+        fair:reversePrimer       "GGACTACNVGGGTWTCTAAT" ;
+        fair:target_subfragment  "V4" ;
+        schema:dataset           <http://fairbydesign.nl/data_sample/D2021_0024_MERGED_1.fq.gz> , <http://fairbydesign.nl/data_sample/D2021_0024_MERGED_2.fq.gz> , <http://fairbydesign.nl/data_sample/Bac_9-16_sludge_f.fastq.gz> , <http://fairbydesign.nl/data_sample/Bac_9-16_sludge_r.fastq.gz> ;
+        schema:dateCreated       "2021-06-17"^^xsd:date ;
+        schema:description       "16s Amplicon assay of sample BAC 09.16 sludge1" ;
+        schema:identifier        "Bac_9-16_sludge" .
+
+<http://fairbydesign.nl/data_sample/Bac_9-16_sludge_f.fastq.gz>
+        rdf:type            jerm:Data_sample ;
+        schema:description  "demultiplexed forward file" ;
+        schema:identifier   "Bac_9-16_sludge_f.fastq.gz" .
+
+<http://fairbydesign.nl/data_sample/Bac_9-16_sludge_r.fastq.gz>
+        rdf:type            jerm:Data_sample ;
+        schema:description  "demultiplexed reverse file" ;
+        schema:identifier   "Bac_9-16_sludge_r.fastq.gz" .
+
+<http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_XNeg_PCR_QC/sam_Neg_PCR_QC/asy_Neg_PCR_QC_lib-2021_0024>
+        rdf:type                 jerm:Assay ;
+        fair:barcode_name        "Hiseq-70" ;
+        fair:facility            "NovoGene" ;
+        fair:forwardBarcode      "TTGCATAT" ;
+        fair:forwardPrimer       "GTGYCAGCMGCCGCGGTAA" ;
+        fair:instrument_model    "Illumina NovaSeq 6000" ;
+        fair:internal_sample_id  "2021_01608" ;
+        fair:libraryName         "2021_0024" ;
+        fair:library_selection   "PCR" ;
+        fair:library_source      "GENOMIC" ;
+        fair:library_strategy    "AMPLICON" ;
+        fair:packageName         "Amplicon demultiplexed" ;
+        fair:platform            "ILLUMINA" ;
+        fair:primerNames         "515F – 806R new EMP" ;
+        fair:protocol            "Qiagen DNeasy Powersoil Pro kit" ;
+        fair:reverseBarcode      "TTGCATAT" ;
+        fair:reversePrimer       "GGACTACNVGGGTWTCTAAT" ;
+        fair:target_subfragment  "V4" ;
+        schema:dataset           <http://fairbydesign.nl/data_sample/D2021_0024_MERGED_1.fq.gz> , <http://fairbydesign.nl/data_sample/D2021_0024_MERGED_2.fq.gz> , <http://fairbydesign.nl/data_sample/Neg_PCR_QC_lib-2021_0024_f.fastq.gz> , <http://fairbydesign.nl/data_sample/Neg_PCR_QC_lib-2021_0024_r.fastq.gz> ;
+        schema:dateCreated       "2021-06-17"^^xsd:date ;
+        schema:description       "Negative PCR Quality Control of library 2021_0024" ;
+        schema:identifier        "Neg_PCR_QC_lib-2021_0024" .
+
+<http://fairbydesign.nl/data_sample/Neg_PCR_QC_lib-2021_0024_f.fastq.gz>
+        rdf:type            jerm:Data_sample ;
+        schema:description  "demultiplexed forward file" ;
+        schema:identifier   "Neg_PCR_QC_lib-2021_0024_f.fastq.gz" .
+
+<http://fairbydesign.nl/data_sample/Neg_PCR_QC_lib-2021_0024_r.fastq.gz>
+        rdf:type            jerm:Data_sample ;
+        schema:description  "demultiplexed reverse file" ;
+        schema:identifier   "Neg_PCR_QC_lib-2021_0024_r.fastq.gz" .
