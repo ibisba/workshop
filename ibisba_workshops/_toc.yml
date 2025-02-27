@@ -12,3 +12,6 @@ parts:
   - caption: FAIR Metada Registration
     chapters:
     - file: docs/fairds/recording-metadata-guide
+    - file: docs/fairds/metadata-configurator-guide
+    - file: docs/fairds/metadata-validation-guide
+    - file: docs/fairds/metadata-seek-guide
