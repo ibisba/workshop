@@ -100,7 +100,7 @@ The FAIR-DS currently has 40+ minimal information models (packages) to choose fr
 
 Let’s go back to the metadata per sample available from the original study. (ENA Accsesion: [SAMEA110403919](https://www.ebi.ac.uk/ena/browser/view/SAMEA110403919))
 
-# Bioreactor Metagenome Sample
+### Bioreactor Metagenome Sample
 
 | Field | Value |
 |-------|-------|
@@ -153,7 +153,7 @@ To increase the interoperability of your metadata you have the option to either 
 **Figure 6:** Overview of the sample metadata selection (Filter for wastewater sludge and select *sample*)
 ![Sample metadata selection](images/template_generation/Note7.png)
 
-### Finally, the planned Assays
+## Finally, the planned Assays
 
 From the publication we can learn that that 16s rDNA sequences were obtained from bioreactor wastewater experiments.  On the website we move on to "Assay" information by unfolding **Assay Information** at the bottom left of the textbox and select "***Amplicon demultiplexed***". Again, there are mandatory and optional fields for you to customize.
 
