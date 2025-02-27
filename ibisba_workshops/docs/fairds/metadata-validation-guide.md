@@ -8,7 +8,7 @@ You will start with a prefilled metadata excelsheet. The sheets were generated u
 
 ## Obtain the data
 
-The metadata file can be obtained [here]().
+The metadata file can be obtained [here](https://github.com/ibisba/workshop/raw/refs/heads/main/ibisba_workshops/data/fairds/BO3B.xlsx).
 
 ![Metadata file](images/template_validation/Note1.png)
 
@@ -114,3 +114,5 @@ An example of an entry in the RDF file that describes a sample:
 ## Conclusion
 
 As you can see the FAIR Data Station can be used to validate metadata files. This is a very important step in the FAIR data lifecycle. The metadata file can be used to automatically populate fields in a data repository. This ensures that the data is FAIR and can be found and reused by **you** and others.
+
+The result files can be obtained here: [RDF](https://raw.githubusercontent.com/ibisba/workshop/refs/heads/main/ibisba_workshops/data/fairds/BO3B-corrected.ttl) [XLSX](https://github.com/ibisba/workshop/raw/refs/heads/main/ibisba_workshops/data/fairds/BO3B-corrected.xlsx)
