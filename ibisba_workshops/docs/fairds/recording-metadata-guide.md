@@ -8,4 +8,4 @@ The training will cover the following topics:
 
 - Configuring metadata fields
 - Recording metadata for data files
-- Publishing your metadata template to FARIDOM-SEEK
+- Publishing your metadata template to FAIRDOM-SEEK
