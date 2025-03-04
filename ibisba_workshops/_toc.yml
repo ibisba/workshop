@@ -15,3 +15,6 @@ parts:
     - file: docs/fairds/metadata-configurator-guide
     - file: docs/fairds/metadata-validation-guide
     - file: docs/fairds/metadata-seek-guide
+  - caption: Semantic Web
+    chapters:
+    - file: docs/semantic-web/seek-semantic-web-guide
