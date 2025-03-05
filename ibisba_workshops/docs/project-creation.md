@@ -3,6 +3,8 @@
 ## Purpose
 
 To create a project on IBISBAKHub. This tutorial assumes you’ve already created your account on the IBISBAKHub. Instructions to create an account can be found [here](https://ibisba.github.io/handbook/hub_account_creation.html).
+For the purpose of this workshop we'll be working on a sandbox environment, where you can freely playaround without the fear of breaking down anything. If you're interested to play around create an account on the [https://sandbox10.fairdomhub.org/](https://sandbox10.fairdomhub.org/)
+
 
 **Step1:**
 
@@ -14,7 +16,7 @@ After logging in click on the “*Create”* tab and from the pull-down menu sel
 
 **Title:**
 
-*\<Your Name\> Project: An inventory of the Aspergillus niger secretome*
+*Project: An inventory of the Aspergillus niger secretome*
 
 **Description:**
 
@@ -38,13 +40,16 @@ For example: *United Kingdom*
 
 ------
 
-**Step3:** Click the “*Submit*” button and youwill be shown a page to review the details and then the “Create’ button. Voila your Project has been created 😇!
+**Step3:** 
+
+> Click the “*Submit*” button and you will be shown a page to review the details and then
+> Click the “*Create*" button. Voila your Project has been created 😇!
 
 ### Approval step
 
-*If you are creating a Project within a Programme you administer, then there is no approval step. You will be shown a page to review the details and then create straight away.*
+*If you are creating a Project within a Programme you administer, then there is no approval step. You will be shown a page to review the details and be able to create straight away.*
 
-*Otherwise, an appropriate administrator will be notified by email about your request. They will also be notified directly when using FAIRDOM-SEEK. The administrator will be shown a page that allows them to quickly review the details and either accept or reject the request, and in either case you will be notified by email.*
+*Otherwise, an appropriate administrator will be notified by email about your request.  The administrator will be shown a page that allows them to quickly review the details and either accept or reject the request, and in either case you will be notified by email.*
 
 ## OPTIONAL STEPS
 
