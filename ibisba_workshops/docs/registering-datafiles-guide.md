@@ -1,6 +1,8 @@
-# PART1: Registering/Uploading datafiles
+#  Registering Datafiles and Samples
 
-Step1:  Download the datafiles provided in the [IBISBA\_WorkShop\_Material](https://drive.google.com/drive/folders/1KxoQoFv-WPiozKrlJCl68Oh72u6ROdN5?usp=sharing) :
+## PART1: Registering/Uploading datafiles
+
+**Step1:**  Download the datafiles provided in the [IBISBA\_WorkShop\_Material](https://drive.google.com/drive/folders/1KxoQoFv-WPiozKrlJCl68Oh72u6ROdN5?usp=sharing) :
 
 - 1.MassSpec\_Results.xls
 - 2.ProteinModelReannotation.doc
@@ -11,6 +13,7 @@ Step1:  Download the datafiles provided in the [IBISBA\_WorkShop\_Material](http
 
 You can also register a Data file by registering a URL to either another page or remote file
 
+
 **Step3:** Fill in the sections using the following information:
 
 **Title:** *Proteins detected by high-throughput mass spectrometry of secretome Aspergillus Niger*
@@ -19,26 +22,27 @@ You can also register a Data file by registering a URL to either another page or
 
 **Projects:** Assign this datafile to the project to which it belongs
 
-* *\<Your Name\> Project : An inventory of Aspergillus niger secrotome*
+* Project : An inventory of Aspergillus niger secrotome*
 
 **Tags:** Add some tag to the datafile which will help to describe it, For e.g. *Mass Spec Data
 
-*Click “NEXT”.*
+> Click “*NEXT*”
 
-## Step4:   License and Permissions
+
+**Step4:**  License and Permissions
 
 **License:** From the list choose “*Creative Common License*”
 
 **Sharing Policy:**  Choose “*No access*” if you wish to keep the datafile private
 
-*Click “NEXT”.*
+> Click “*NEXT*"
 
 **Associated Assays:**
 
 Associated this datafile to the ASSAY :“*Liquid Chromatography and Mass Spectrometry*” from the list
 You can also select an existing Experimental assay or Modelling analysis to associate with this Data file.
 
-> Click “NEXT”
+> Click “*NEXT*”
 
 On this page you add additional properties to the datafile such as:
 
@@ -46,9 +50,9 @@ On this page you add additional properties to the datafile such as:
 - Add associated publications
 - Events related to this datafile
  
-> Hit the “Create” button.
+> Hit the “*Create*” button.
 
-**OPTIONAL STEPS:**
+**Optional Steps:**
 
 Once the datafile is created, using the “*Actions”* drop down menu you can
 
@@ -76,17 +80,17 @@ A Sample Type can be made in two ways:
 
 In this section  we will be creating Samples using a spreadsheet containing the Sample Type Template
 
-### Step1
+**Step1:**
 
 Download the file “*3.Samples\_A.Niger.xlsx*” from the [IBISBA\_WorkShop\_Material](https://drive.google.com/drive/folders/1KxoQoFv-WPiozKrlJCl68Oh72u6ROdN5?usp=sharing)
 
-### Step2
+**Step2:**
 
 Assuming you are already logged in click the *Create* button from the top-navigation bar and from the drop-down menu select “*Sample Types*” and a new page  *New Sample Type* will open up:
 
 **Choose the tab Use spreadsheet template**
 
-### Step3
+**Step3:**
 
 Fill in the sections using the following information:
 
@@ -96,23 +100,24 @@ Fill in the sections using the following information:
 
 **Projects:** Assign to the project to which it belongs:
 
-- *\<Your Name\> Project: An inventory of Aspergillus niger secrotome*
+- * Project: An inventory of Aspergillus niger secrotome*
 
 **Step4:** Permissions and template Upload
 
-## Sharing Policy
+### Sharing Policy
 
 Choose “*No access*” if you wish to keep the datafile private
 
 *Click* “*File to Upload” : 3.Samples\_A.Niger.xlsx* and then
-Hit the “*Create*” button.
+
+> Hit the “*Create*” button.
 
 From here you will be taken to a page containing the metadata, and a list of the attribute names from the template file.
 Here you can select specific attribute types. You are also free to delete, rename or reorder the attributes.
 
-Step5: Once Step 4 is completed  click update. Your Sample Type can now be used to generate Samples.
+**Step5:** Once Step 4 is completed  click update. Your Sample Type can now be used to generate Samples.
 
-## OPTIONAL STEPS:
+## Optional Steps:
 
 Once the datafile is created, using the “*Actions”* drop down menu you can
 
@@ -120,11 +125,12 @@ Once the datafile is created, using the “*Actions”* drop down menu you can
 - Manage Sample Type
 - Delete Sample Type
 
-**Step7:** 
+**Step6:** 
 
-From here you can now create you samples using the *Create sample* button:
+From here you can now create your samples using the 
+> "*Create sample*" button in the top menu
 
-You’ll be directed  to a *New Sample* page. Where you can add the following information:
+You’ll be directed to a *New Sample* page. Where you can add the following information:
 
 **Sample Name:**
 **Strain:**
@@ -132,9 +138,9 @@ You’ll be directed  to a *New Sample* page. Where you can add the following in
 
 **Projects:** Assign the Sample to the project to which it belongs:
 
-- *\<Your Name\> Project: An inventory of Aspergillus niger secrotome*
+- * Project: An inventory of Aspergillus niger secrotome*
 
-## Step4: Permissions and template Upload
+**Permissions and template Upload**
 
 **Sharing Policy:** Choose “*No access*” if you wish to keep the datafile private
 
@@ -142,21 +148,23 @@ You’ll be directed  to a *New Sample* page. Where you can add the following in
 
 **Observation Unit:**
 
-Hit the “*Create*” button.
+> Hit the “*Create*” button.
 
-### Creating Samples from a template
+## Creating Samples from a template
 
 You can bulk-create samples by populating a template and uploading as a Datafile. Once uploaded it should be recognised as having originated from a sample type template, and an option to extract samples will be displayed as a button.
 
-### Step1:
+**Step1:**
 
 Download the file “*3.Samples\_A.Niger.xlsx*” from the [IBISBA\_WorkShop\_Material](https://drive.google.com/drive/folders/1KxoQoFv-WPiozKrlJCl68Oh72u6ROdN5?usp=sharing)
 
-Step2:  Assuming you are already logged in click the *Create* button from the top-navigation bar and from the drop-down menu select “*datafile*” and a new page will open up:
+**Step2:**  Assuming you are already logged in click the *Create* button from the top-navigation bar and from the drop-down menu select “*datafile*” and a new page will open up:
       Upload datafile(3.Samples\_A.Niger.xlsx)
 
 
-Step3: Fill in the sections using the following information:
+**Step3:** 
+
+Fill in the sections using the following information:
 
 **Title:** *Samples used for the Aspergillus Niger experiments*
 
@@ -164,9 +172,9 @@ Step3: Fill in the sections using the following information:
 
 **Projects:** Assign this datafile to the project to which it belongs:
 
-●      *\<Your Name\> Project: An inventory of Aspergillus niger secrotome*
+- * Project: An inventory of Aspergillus niger secrotome*
 
-*Press “NEXT”.*
+> Click “*NEXT*" 
 
 ## Step4:   License and Permissions
 
@@ -174,28 +182,32 @@ Step3: Fill in the sections using the following information:
 
 **Sharing Policy:** Choose “*No access*” if you wish to keep the datafile private
 
->*Click* “*NEXT”*
+> Click “*NEXT”*
 
 **Associated Assays:** Choose the existing assay to which the Sample belongs
 
->*Click* “*NEXT”*
+> Click “*NEXT”*
 
-On this page you add additional properties to the datafile such as
+On this page you can add additional properties to the datafile such as
 
 - Associate it with Discussion Channels
 - Add associated publications
 - Events related to this datafile
 - Associated Observations Units
 
-Hit the “*Create*” button.
+> Hit the “*Create*” button
 
 **Step5:** From the top panel of options click “*Extract Samples*” and you will be directed to a new page
 
 **Step6:** Select “*Sample Type”* from the list and click “*Continue”*. It will take a few moments to extract the Samples
 
-**Step7:** Click on the “*Review Extracted Samples*” and  check whether the data looks right to you
+**Step7:** 
 
-**Step8:** Press “*Confirm*” and the samples will be assigned to your Project
+> Click on the “*Review Extracted Samples*” and  check whether the data looks right to you
+
+**Step8:** 
+
+> Click “*Confirm*” button and the samples will be assigned to your Project
 
 Using the “*Explore”* button you can:
 
@@ -203,7 +215,7 @@ Using the “*Explore”* button you can:
 - plot the data
 - add annotation
 
-### OPTIONAL STEPS
+### Optional Steps
 
 Once the datafile is created, using the “*Actions”* drop down menu you can
 
