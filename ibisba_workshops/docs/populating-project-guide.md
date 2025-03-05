@@ -1,7 +1,6 @@
-# Section Two - Populating a Project
+# Populating a Project: ISA Structure
 
-**Purpose:** To populate a project with the experimental information organising your data and related information.
-
+**Purpose:** To populate a project with the experimental information to organise your data and related information.
 Once your project has been created you are now ready to populate your project and create the ISA (Investigation,Study, Assay) structure
 
 **There are multiple ways of doing this:**
@@ -16,7 +15,7 @@ Once your project has been created you are now ready to populate your project an
 
 This is where we will create the ISA structure. The ISA (Investigation, Study, Assay) is a general purpose framework for describing how experiments relate to one another.
 
-### Step 1: Create and Investigation
+## Step 1: Create and Investigation
 
 Click on the “*Create”* tab and from the pull-down menu select “*Investigation”* and a New Investigation page will open. Fill in the following sections with relevant information:
 
@@ -39,7 +38,7 @@ Click on the “*Create”* tab and from the pull-down menu select “*Investiga
 
 ![Sharing permissions][image1]
 
-Creators:
+**Creators:**
 *Add other creators e.g. co-investigators o*
 
 ![Creators overview][image2]
@@ -65,13 +64,21 @@ Fill in the relevant sections like in the Investigation above:
 
 **Extended metadata:**
 *If applicable*
+
 **Study  position:**
 *You can specify the position you want this Study to have under the Investigation: 1*
+
 **Project:**
 *Assign the Investigation to the project created*
+
 **Sharing:**
+*Assign the who you want to share the data with.*
+
 **Creators:**
+*Add additional creators if you wish. *
+
 **Publications:**
+* Add any associated Publications.*
 
 ### Step 3: Create the Assays
 
@@ -85,14 +92,18 @@ Fill in the relevant sections like in the Investigation above:
 **Description:**
 
 **Extended metadata:**
-
 *If applicable*
+
 **Study  position:**
 *You can specify the position you want this Study to have under the Investigation: 1*
+
 **Project:**
 *Assign the Investigation to the project created*
+
 **Sharing:**
+
 **Creators:**
+
 **Publications:**
 
 ![][image4]
