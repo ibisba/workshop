@@ -53,7 +53,7 @@ For example: *United Kingdom*
 
 *Otherwise, an appropriate administrator will be notified by email about your request.  The administrator will be shown a page that allows them to quickly review the details and either accept or reject the request, and in either case you will be notified by email.*
 
-### OPTIONAL STEPS
+### Optional Steps
 
 
 **Step4:** Click on the Actions tab and select: “*Manage Project*” to edit any details about the project if you wish and add more information  for e.g.
