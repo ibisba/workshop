@@ -53,9 +53,10 @@ For example: *United Kingdom*
 
 *Otherwise, an appropriate administrator will be notified by email about your request.  The administrator will be shown a page that allows them to quickly review the details and either accept or reject the request, and in either case you will be notified by email.*
 
-## OPTIONAL STEPS
+### OPTIONAL STEPS
 
-## Step4: Click on the Actions tab and select: “*Manage Project*” to edit any details about the project if you wish and add more information  for e.g.
+
+**Step4:** Click on the Actions tab and select: “*Manage Project*” to edit any details about the project if you wish and add more information  for e.g.
 
 **Topic annotations:**
 For e.g. Biotechnology  
@@ -71,15 +72,20 @@ Fill if applicable, for example: “[*https://www.example.com*](https://www.exam
 
 **Start date:** *2025/03/01*         **End date:**  *2028/12/31*  
 **Associated programme:**
-Click and choose *“IBISBA Workshop”* from the list of options  
+Click and choose *“IBISBA Workshop”* from the list of options 
+
 **Your Institution:**
 Click and choose your respective institution from the list  
+
 **Organisms:**
 Choose “*Aspergillus niger*” from the list available  
+
 **Default License:**
 From the list choose “*Creative Common License*”
+
 **Default Sharing Policy:**
 This will be done after the project is created.  
+
 **Discussion Channels:**
 Add one or more URLs to point to discussion channels related to this Project.  
 Otherwise, leave empty.
@@ -88,9 +94,9 @@ Otherwise, leave empty.
 
 1. Write the name of person you wish to add under the Add Members tab
 2. Select the associated Institute name  
-3. And click the “*Confirm changes”* button
+3. > Click the “*Confirm changes*" button
 
 **Step6:** Again, from the *Actions tab* select “*Administer Project members roles*”:
 
 1. Add the name of the person you wish to assign administrative roles under Project Administrator  
-2. And click the “*Confirm changes”* button
+2. > Click the “*Confirm changes*" button
