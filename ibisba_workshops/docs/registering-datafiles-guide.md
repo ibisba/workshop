@@ -26,7 +26,7 @@ You can also register a Data file by registering a URL to either another page or
 
 **Tags:** Add some tag to the datafile which will help to describe it, For e.g. *Mass Spec Data
 
-> Click “*NEXT*”
+> Click “*Next*”
 
 
 **Step4:**  License and Permissions
@@ -35,14 +35,14 @@ You can also register a Data file by registering a URL to either another page or
 
 **Sharing Policy:**  Choose “*No access*” if you wish to keep the datafile private
 
-> Click “*NEXT*"
+> Click “*Next*"
 
 **Associated Assays:**
 
 Associated this datafile to the ASSAY :“*Liquid Chromatography and Mass Spectrometry*” from the list
 You can also select an existing Experimental assay or Modelling analysis to associate with this Data file.
 
-> Click “*NEXT*”
+> Click “*Next*”
 
 On this page you add additional properties to the datafile such as:
 
@@ -56,10 +56,10 @@ On this page you add additional properties to the datafile such as:
 
 Once the datafile is created, using the “*Actions”* drop down menu you can
 
-- edit this file,
-- manage the file,
+- edit this file
+- manage the file
 - delete the file or
-- upload a new version.
+- upload a new version
 
  
 **Using the “*Explore”* button you can:**
@@ -110,7 +110,7 @@ Choose “*No access*” if you wish to keep the datafile private
 
 *Click* “*File to Upload” : 3.Samples\_A.Niger.xlsx* and then
 
-> Hit the “*Create*” button.
+> Hit the “*Create*” button
 
 From here you will be taken to a page containing the metadata, and a list of the attribute names from the template file.
 Here you can select specific attribute types. You are also free to delete, rename or reorder the attributes.
@@ -121,7 +121,7 @@ Here you can select specific attribute types. You are also free to delete, renam
 
 Once the datafile is created, using the “*Actions”* drop down menu you can
 
-- Edit Sample Type, 
+- Edit Sample Type 
 - Manage Sample Type
 - Delete Sample Type
 
@@ -148,7 +148,7 @@ You’ll be directed to a *New Sample* page. Where you can add the following inf
 
 **Observation Unit:**
 
-> Hit the “*Create*” button.
+> Hit the “*Create*” button
 
 ## Creating Samples from a template
 
@@ -174,19 +174,19 @@ Fill in the sections using the following information:
 
 - * Project: An inventory of Aspergillus niger secrotome*
 
-> Click “*NEXT*" 
+> Click “*Next*" 
 
-## Step4:   License and Permissions
+**Step4:**   License and Permissions
 
 **License:** From the list choose “*Creative Common License*”
 
 **Sharing Policy:** Choose “*No access*” if you wish to keep the datafile private
 
-> Click “*NEXT”*
+> Click “*Next”*
 
 **Associated Assays:** Choose the existing assay to which the Sample belongs
 
-> Click “*NEXT”*
+> Click “*Next”*
 
 On this page you can add additional properties to the datafile such as
 
@@ -219,7 +219,7 @@ Using the “*Explore”* button you can:
 
 Once the datafile is created, using the “*Actions”* drop down menu you can
 
-- edit this file,
-- manage the file,
+- edit this file
+- manage the file
 - delete the file or
 - Register new version
