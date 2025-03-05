@@ -3,7 +3,8 @@
 ## Purpose
 
 To create a project on IBISBAKHub. This tutorial assumes you’ve already created your account on the IBISBAKHub. Instructions to create an account can be found [here](https://ibisba.github.io/handbook/hub_account_creation.html).
-For the purpose of this workshop we'll be working on a sandbox environment, where you can freely playaround without the fear of breaking down anything. If you're interested to play around create an account on the [https://sandbox10.fairdomhub.org/](https://sandbox10.fairdomhub.org/)
+
+For the purpose of this workshop we'll be working on a sandbox environment, where you can freely playaround without the fear of breaking anything. If you're interested to play around create an account on the [https://sandbox10.fairdomhub.org/](https://sandbox10.fairdomhub.org/)
 
 
 **Step1:**
@@ -43,6 +44,7 @@ For example: *United Kingdom*
 **Step3:** 
 
 > Click the “*Submit*” button and you will be shown a page to review the details and then
+
 > Click the “*Create*" button. Voila your Project has been created 😇!
 
 ### Approval step
