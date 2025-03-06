@@ -42,6 +42,6 @@ You can try out other queries to retrieve different metadata from FAIRDOM-SEEK. 
 
 You can find the schema of the FAIRDOM-SEEK instance with the datasets that it currently contains in the public domain in the figure below.
 
-<a href="workshop/_images/schema.svg" target="_blank">
-    <img src="workshop/_images/schema.svg" alt="schema">
+<a href="../../_images/schema.svg" target="_blank">
+    <img src="../../_images/schema.svg" alt="schema">
 </a>
