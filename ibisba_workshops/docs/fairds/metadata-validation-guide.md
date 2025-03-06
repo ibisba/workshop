@@ -36,7 +36,6 @@ As you can see it will start complaining about a field
 
 > **Evaluation message**  
 The value "5" of "biosafety level" in the "Sample" sheet which is obligatory  does not match the pattern of (1|2|3|4|unknown) regex (1|2|3|4|unknown) such as in example "2"
-```
 
 As you can see in the excel sheet in the "sample" sheet under "biosafety level"
 
