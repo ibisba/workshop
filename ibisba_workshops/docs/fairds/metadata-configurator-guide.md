@@ -29,7 +29,7 @@ Start up the FAIR DS tool available at [https://fairds.fairbydesign.nl](https://
 The `Identifier`,  `Title` and the `Description` of this Investigation would be something like: (you can copy/paste the various items in the Investigation textbox of the FAIR-DS tool).  
 
 > **Identifier:** BO3B  
-> **Title:** Synergies between biological and ozonisation processes for micropollutant removal
+> **Title:** Synergies between biological and ozonisation processes for micropollutant removal  
 > **Description:** Investigation into optimizing micropollutant removal from wastewater treatment plant effluent using biological treatment and ozonation
 
 **Note:** Make sure that when you add (your) name and e-mail you push the **add** button.
@@ -52,8 +52,8 @@ Once this is done you can go to the next section.
 
 In our example there is one **Study** – but you can imagine that there will be a follow-up study at a later stage. Here we add the specifics of the particular study. In this case:
 
-> **Identifier:**   BO3B-BR1
-> **Title:** Optimizing condutions using bioreactors
+> **Identifier:**   BO3B-BR1  
+> **Title:** Optimizing condutions using bioreactors  
 > **Description:** What type of bioreactors are best at removing organic matter from wastewater treatment plant effluent. And what conditions can optimize these processes
 
 Paste this text in the textbox, and we have already finished step 1 of 3!

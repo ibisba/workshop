@@ -34,7 +34,7 @@ It will now start the validation...
 
 As you can see it will start complaining about a field
 
-```{dropdown} Evaluation message
+> **Evaluation message**  
 The value "5" of "biosafety level" in the "Sample" sheet which is obligatory  does not match the pattern of (1|2|3|4|unknown) regex (1|2|3|4|unknown) such as in example "2"
 ```
 
@@ -52,20 +52,17 @@ You see that it is very likely that excel magic happend here. The only fields al
 
 The evaluation message should now show:
 
-```{dropdown} Evaluation message
-Analysing investigation information
-Analysing study information
-Analyzing observation unit sheet
-Finished processing Sample - wastewater sludge sheet
-Processing Assay - Amplicon demultiplexed sheet
-Finished parsing Assay - Amplicon demultiplexed sheet
-Validating RDF file: ./fairds_storage//validation/BO3B.ttl
-Validation successful, user not logged in.
-Result file not uploaded to the data storage facility
-
-Validation appeared to be successful.
-```
-
+> **Evaluation message**  
+Analysing investigation information  
+Analysing study information  
+Analyzing observation unit sheet  
+Finished processing Sample - wastewater sludge sheet  
+Processing Assay - Amplicon demultiplexed sheet  
+Finished parsing Assay - Amplicon demultiplexed sheet  
+Validating RDF file: ./fairds_storage//validation/BO3B.ttl  
+Validation successful, user not logged in.  
+Result file not uploaded to the data storage facility  
+**Validation appeared to be successful.**
 
 ## The validated RDF file
 
@@ -73,8 +70,8 @@ After the validation is successful you can download the RDF file. This file can 
 
 An example of an entry in the RDF file that describes a sample:
 
-```{dropdown} RDF entry
-<http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_30>
+```turtle
+<http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_30>  
         rdf:type                     jerm:Sample ;
         fair:biosafety_level         1 ;
         fair:broad-scale_environmental_context
@@ -89,16 +86,16 @@ An example of an entry in the RDF file that describes a sample:
                 "Netherlands" ;
         fair:local_environmental_context
                 "bioreactor" ;
-        fair:local_storage_location  "-80 freezer at environmental technology. Moved to microbiology freezers in december 2019" ;
+        fair:local_storage_location  "-80 freezer at environmental technology. Moved to   microbiology freezers in december 2019" ;
         fair:material                "50 mL water" ;
         fair:packageName             "wastewater sludge" ;
         fair:reactor                 "BAC" ;
         fair:sample_condition        "Stored at -80" ;
         fair:sample_proces_key       "BAC Liquid 1" ;
         fair:sample_size             "50 mL" ;
-        fair:sample_treatment        "50 mL sample was filtered with 0.2 a um filter, the filter was stored in an eppendorf." ;
+        fair:sample_treatment        "50 mL sample was filtered with 0.2 a um filter,   the filter was stored in an eppendorf." ;
         fair:sample_types            "Effluent" ;
-        fair:sampling_strategy       "Using sterilised metal rod, sample from middle of the collumn, put in eppendorf and immidiately to -80 freezer" ;
+        fair:sampling_strategy       "Using sterilised metal rod, sample from middle of   the collumn, put in eppendorf and immidiately to -80 freezer" ;
         fair:solid_liquid            "Liquid" ;
         gbol:scientificName          "bioreactor metagenome" ;
         jerm:hasPart                 <http://fairbydesign.nl/ontology/inv_BO3B/stu_BO3B-BR1/obs_BR1_BAC/sam_BAC_09_30/asy_Bac_9-30> ;
