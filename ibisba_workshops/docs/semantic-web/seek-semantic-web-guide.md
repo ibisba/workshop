@@ -37,3 +37,9 @@ There you go! You have successfully queried the metadata of the data stored in F
 ## Step 2: Try out other queries
 
 You can try out other queries to retrieve different metadata from FAIRDOM-SEEK. Examples are shown in the left panel of the YasGUI interface.
+
+## Step 3: Schema overview
+
+You can find the schema of the FAIRDOM-SEEK instance with the datasets that it currently contains in the public domain in the figure below.
+
+![schema](images/schema.svg)
