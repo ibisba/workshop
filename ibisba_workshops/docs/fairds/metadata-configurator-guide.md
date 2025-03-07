@@ -163,7 +163,7 @@ From the publication we can learn that that 16s rDNA sequences were obtained fro
 When you are done you can download the Excel workbook and start filling in your sample metadata.
 
 ```{hint}
-You can **download** a template Excel workbook created by this tutorial available at: [**here**](https://gitlab.com/m-unlock/docs.fairbydesign.nl/-/raw/main/docs/fairdatastation/data/INV_DRP007092_empty.xlsx)
+You can **download** a template Excel workbook created by this tutorial available at: [**here**](The metadata file can be obtained [here](https://github.com/ibisba/workshop/raw/refs/heads/main/ibisba_workshops/data/fairds/BO3B-2.xlsx).)
 ```
 
 ## Step 3: Metadata Validation
